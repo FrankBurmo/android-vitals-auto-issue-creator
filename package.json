@@ -6,7 +6,7 @@
   "description": "Sync crash and ANR errors from Google Play Console to GitHub Issues",
   "main": "dist/index.js",
   "scripts": {
-    "build": "node --max-old-space-size=4096 node_modules/@vercel/ncc/dist/ncc/cli.js build src/index.ts -o dist --source-map --license licenses.txt",
+    "build": "node scripts/build.mjs",
     "test": "vitest run",
     "lint": "oxlint src tests",
     "lint:fix": "oxlint --fix src tests",
