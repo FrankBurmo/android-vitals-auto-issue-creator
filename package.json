@@ -5,6 +5,9 @@
   "private": true,
   "description": "Sync crash and ANR errors from Google Play Console to GitHub Issues",
   "main": "dist/index.js",
+  "workspaces": [
+    "tools/ncc-ts6-shim"
+  ],
   "scripts": {
     "build": "node scripts/build.mjs",
     "test": "vitest run",
