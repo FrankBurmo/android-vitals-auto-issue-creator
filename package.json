@@ -29,7 +29,7 @@
     "@actions/core": "^3.0.1",
     "@actions/github": "^9.1.1",
     "@googleapis/playdeveloperreporting": "^10.0.0",
-    "google-auth-library": "^10.9.1"
+    "google-auth-library": "^11.0.0"
   },
   "devDependencies": {
     "@types/node": "^26.1.2",
