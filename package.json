@@ -28,11 +28,11 @@
   "dependencies": {
     "@actions/core": "^3.0.1",
     "@actions/github": "^9.1.1",
-    "@googleapis/playdeveloperreporting": "^10.0.0",
+    "@googleapis/playdeveloperreporting": "^11.0.0",
     "google-auth-library": "^11.0.0"
   },
   "devDependencies": {
-    "@types/node": "^26.1.2",
+    "@types/node": "^26.2.0",
     "@vercel/ncc": "^0.44.1",
     "oxlint": "^1.77.0",
     "typescript": "^7.0.2",
