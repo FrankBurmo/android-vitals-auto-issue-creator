@@ -8309,7 +8309,7 @@ module.exports = reflectGetProto
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.AuthClient = exports.DEFAULT_EAGER_REFRESH_THRESHOLD_MILLIS = exports.DEFAULT_UNIVERSE = void 0;
 const events_1 = __nccwpck_require__(4434);
-const gaxios_1 = __nccwpck_require__(7842);
+const gaxios_1 = __nccwpck_require__(9816);
 const util_1 = __nccwpck_require__(7870);
 const google_logging_utils_1 = __nccwpck_require__(1577);
 const shared_cjs_1 = __nccwpck_require__(5470);
@@ -8604,7 +8604,7 @@ const awsrequestsigner_1 = __nccwpck_require__(7647);
 const baseexternalclient_1 = __nccwpck_require__(142);
 const defaultawssecuritycredentialssupplier_1 = __nccwpck_require__(9157);
 const util_1 = __nccwpck_require__(7870);
-const gaxios_1 = __nccwpck_require__(7842);
+const gaxios_1 = __nccwpck_require__(9816);
 /**
  * AWS external account client. This is used for AWS workloads, where
  * AWS STS GetCallerIdentity serialized signed requests are exchanged for
@@ -8760,7 +8760,7 @@ exports.AwsClient = AwsClient;
 // limitations under the License.
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.AwsRequestSigner = void 0;
-const gaxios_1 = __nccwpck_require__(7842);
+const gaxios_1 = __nccwpck_require__(9816);
 const crypto_1 = __nccwpck_require__(8851);
 /** AWS Signature Version 4 signing algorithm identifier.  */
 const AWS_ALGORITHM = 'AWS4-HMAC-SHA256';
@@ -8979,7 +8979,7 @@ async function generateAuthenticationHeaderMap(options) {
 // limitations under the License.
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.BaseExternalAccountClient = exports.CLOUD_RESOURCE_MANAGER = exports.EXTERNAL_ACCOUNT_TYPE = exports.EXPIRATION_TIME_OFFSET = void 0;
-const gaxios_1 = __nccwpck_require__(7842);
+const gaxios_1 = __nccwpck_require__(9816);
 const stream = __nccwpck_require__(2203);
 const authclient_1 = __nccwpck_require__(4810);
 const sts = __nccwpck_require__(121);
@@ -9691,7 +9691,7 @@ exports.CertificateSubjectTokenSupplier = CertificateSubjectTokenSupplier;
 // limitations under the License.
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.Compute = void 0;
-const gaxios_1 = __nccwpck_require__(7842);
+const gaxios_1 = __nccwpck_require__(9816);
 const gcpMetadata = __nccwpck_require__(7027);
 const oauth2client_1 = __nccwpck_require__(91);
 class Compute extends oauth2client_1.OAuth2Client {
@@ -10020,7 +10020,7 @@ exports.DefaultAwsSecurityCredentialsSupplier = DefaultAwsSecurityCredentialsSup
 // limitations under the License.
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.DownscopedClient = exports.EXPIRATION_TIME_OFFSET = exports.MAX_ACCESS_BOUNDARY_RULES_COUNT = void 0;
-const gaxios_1 = __nccwpck_require__(7842);
+const gaxios_1 = __nccwpck_require__(9816);
 const stream = __nccwpck_require__(2203);
 const authclient_1 = __nccwpck_require__(4810);
 const sts = __nccwpck_require__(121);
@@ -10588,7 +10588,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ExternalAccountAuthorizedUserClient = exports.EXTERNAL_ACCOUNT_AUTHORIZED_USER_TYPE = void 0;
 const authclient_1 = __nccwpck_require__(4810);
 const oauth2common_1 = __nccwpck_require__(9034);
-const gaxios_1 = __nccwpck_require__(7842);
+const gaxios_1 = __nccwpck_require__(9816);
 const stream = __nccwpck_require__(2203);
 const baseexternalclient_1 = __nccwpck_require__(142);
 /**
@@ -11304,7 +11304,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.GoogleAuth = exports.GoogleAuthExceptionMessages = void 0;
 const child_process_1 = __nccwpck_require__(5317);
 const fs = __nccwpck_require__(9896);
-const gaxios_1 = __nccwpck_require__(7842);
+const gaxios_1 = __nccwpck_require__(9816);
 const gcpMetadata = __nccwpck_require__(7027);
 const os = __nccwpck_require__(857);
 const path = __nccwpck_require__(6928);
@@ -12285,7 +12285,7 @@ const filesubjecttokensupplier_1 = __nccwpck_require__(8551);
 const urlsubjecttokensupplier_1 = __nccwpck_require__(4627);
 const certificatesubjecttokensupplier_1 = __nccwpck_require__(6129);
 const stscredentials_1 = __nccwpck_require__(121);
-const gaxios_1 = __nccwpck_require__(7842);
+const gaxios_1 = __nccwpck_require__(9816);
 /**
  * Defines the Url-sourced and file-sourced external account clients mainly
  * used for K8s and Azure workloads.
@@ -12481,7 +12481,7 @@ exports.IdTokenClient = IdTokenClient;
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.Impersonated = exports.IMPERSONATED_ACCOUNT_TYPE = void 0;
 const oauth2client_1 = __nccwpck_require__(91);
-const gaxios_1 = __nccwpck_require__(7842);
+const gaxios_1 = __nccwpck_require__(9816);
 const util_1 = __nccwpck_require__(7870);
 exports.IMPERSONATED_ACCOUNT_TYPE = 'impersonated_service_account';
 class Impersonated extends oauth2client_1.OAuth2Client {
@@ -13261,7 +13261,7 @@ exports.LoginTicket = LoginTicket;
 // limitations under the License.
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.OAuth2Client = exports.ClientAuthentication = exports.CertificateFormat = exports.CodeChallengeMethod = void 0;
-const gaxios_1 = __nccwpck_require__(7842);
+const gaxios_1 = __nccwpck_require__(9816);
 const querystring = __nccwpck_require__(3480);
 const stream = __nccwpck_require__(2203);
 const formatEcdsa = __nccwpck_require__(325);
@@ -14088,7 +14088,7 @@ exports.OAuth2Client = OAuth2Client;
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.OAuthClientAuthHandler = void 0;
 exports.getErrorFromOAuthErrorResponse = getErrorFromOAuthErrorResponse;
-const gaxios_1 = __nccwpck_require__(7842);
+const gaxios_1 = __nccwpck_require__(9816);
 const crypto_1 = __nccwpck_require__(8851);
 /** List of HTTP methods that accept request bodies. */
 const METHODS_SUPPORTING_REQUEST_BODY = ['PUT', 'POST', 'PATCH'];
@@ -14920,7 +14920,7 @@ exports.UserRefreshClient = UserRefreshClient;
 // limitations under the License.
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.StsCredentials = void 0;
-const gaxios_1 = __nccwpck_require__(7842);
+const gaxios_1 = __nccwpck_require__(9816);
 const authclient_1 = __nccwpck_require__(4810);
 const oauth2common_1 = __nccwpck_require__(9034);
 const util_1 = __nccwpck_require__(7870);
@@ -15676,7 +15676,7 @@ async function getToken(tokenOptions) {
 // limitations under the License.
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.GoogleToken = void 0;
-const gaxios_1 = __nccwpck_require__(7842);
+const gaxios_1 = __nccwpck_require__(9816);
 const tokenHandler_1 = __nccwpck_require__(1488);
 const revokeToken_1 = __nccwpck_require__(8024);
 /**
@@ -16029,7 +16029,7 @@ Object.defineProperty(exports, "GoogleAuth", ({ enumerable: true, get: function 
 // Export common deps to ensure types/instances are the exact match. Useful
 // for consistently configuring the library across versions.
 exports.gcpMetadata = __nccwpck_require__(7027);
-exports.gaxios = __nccwpck_require__(7842);
+exports.gaxios = __nccwpck_require__(9816);
 var authclient_1 = __nccwpck_require__(4810);
 Object.defineProperty(exports, "AuthClient", ({ enumerable: true, get: function () { return authclient_1.AuthClient; } }));
 Object.defineProperty(exports, "DEFAULT_UNIVERSE", ({ enumerable: true, get: function () { return authclient_1.DEFAULT_UNIVERSE; } }));
@@ -16264,6 +16264,2457 @@ function _isWindows() {
     return os.platform().startsWith('win');
 }
 //# sourceMappingURL=util.js.map
+
+/***/ }),
+
+/***/ 4763:
+/***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
+
+
+// Copyright 2018 Google LLC
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//    http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.GaxiosError = exports.GAXIOS_ERROR_SYMBOL = void 0;
+exports.defaultErrorRedactor = defaultErrorRedactor;
+const extend_1 = __importDefault(__nccwpck_require__(3860));
+const util_cjs_1 = __importDefault(__nccwpck_require__(7273));
+const pkg = util_cjs_1.default.pkg;
+/**
+ * Support `instanceof` operator for `GaxiosError`s in different versions of this library.
+ *
+ * @see {@link GaxiosError[Symbol.hasInstance]}
+ */
+exports.GAXIOS_ERROR_SYMBOL = Symbol.for(`${pkg.name}-gaxios-error`);
+class GaxiosError extends Error {
+    config;
+    response;
+    /**
+     * An error code.
+     * Can be a system error code, DOMException error name, or any error's 'code' property where it is a `string`.
+     *
+     * It is only a `number` when the cause is sourced from an API-level error (AIP-193).
+     *
+     * @see {@link https://nodejs.org/api/errors.html#errorcode error.code}
+     * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/DOMException#error_names DOMException#error_names}
+     * @see {@link https://google.aip.dev/193#http11json-representation AIP-193}
+     *
+     * @example
+     * 'ECONNRESET'
+     *
+     * @example
+     * 'TimeoutError'
+     *
+     * @example
+     * 500
+     */
+    code;
+    /**
+     * An HTTP Status code.
+     * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/Response/status Response#status}
+     *
+     * @example
+     * 500
+     */
+    status;
+    /**
+     * @deprecated use {@link GaxiosError.cause} instead.
+     *
+     * @see {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error/cause Error#cause}
+     *
+     * @privateRemarks
+     *
+     * We will want to remove this property later as the modern `cause` property is better suited
+     * for displaying and relaying nested errors. Keeping this here makes the resulting
+     * error log larger than it needs to be.
+     *
+     */
+    error;
+    /**
+     * Support `instanceof` operator for `GaxiosError` across builds/duplicated files.
+     *
+     * @see {@link GAXIOS_ERROR_SYMBOL}
+     * @see {@link GaxiosError[Symbol.hasInstance]}
+     * @see {@link https://github.com/microsoft/TypeScript/issues/13965#issuecomment-278570200}
+     * @see {@link https://stackoverflow.com/questions/46618852/require-and-instanceof}
+     * @see {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/@@hasInstance#reverting_to_default_instanceof_behavior}
+     */
+    [exports.GAXIOS_ERROR_SYMBOL] = pkg.version;
+    /**
+     * Support `instanceof` operator for `GaxiosError` across builds/duplicated files.
+     *
+     * @see {@link GAXIOS_ERROR_SYMBOL}
+     * @see {@link GaxiosError[GAXIOS_ERROR_SYMBOL]}
+     */
+    static [Symbol.hasInstance](instance) {
+        if (instance &&
+            typeof instance === 'object' &&
+            exports.GAXIOS_ERROR_SYMBOL in instance &&
+            instance[exports.GAXIOS_ERROR_SYMBOL] === pkg.version) {
+            return true;
+        }
+        // fallback to native
+        return Function.prototype[Symbol.hasInstance].call(GaxiosError, instance);
+    }
+    constructor(message, config, response, cause) {
+        super(message, { cause });
+        this.config = config;
+        this.response = response;
+        this.error = cause instanceof Error ? cause : undefined;
+        // deep-copy config as we do not want to mutate
+        // the existing config for future retries/use
+        this.config = (0, extend_1.default)(true, {}, config);
+        if (this.response) {
+            this.response.config = (0, extend_1.default)(true, {}, this.response.config);
+        }
+        if (this.response) {
+            try {
+                this.response.data = translateData(this.config.responseType, 
+                // workaround for `node-fetch`'s `.data` deprecation...
+                this.response?.bodyUsed ? this.response?.data : undefined);
+            }
+            catch {
+                // best effort - don't throw an error within an error
+                // we could set `this.response.config.responseType = 'unknown'`, but
+                // that would mutate future calls with this config object.
+            }
+            this.status = this.response.status;
+        }
+        if (cause instanceof DOMException) {
+            // The DOMException's equivalent to code is its name
+            // E.g.: name = `TimeoutError`, code = number
+            // https://developer.mozilla.org/en-US/docs/Web/API/DOMException/name
+            this.code = cause.name;
+        }
+        else if (cause &&
+            typeof cause === 'object' &&
+            'code' in cause &&
+            (typeof cause.code === 'string' || typeof cause.code === 'number')) {
+            this.code = cause.code;
+        }
+    }
+    /**
+     * An AIP-193 conforming error extractor.
+     *
+     * @see {@link https://google.aip.dev/193#http11json-representation AIP-193}
+     *
+     * @internal
+     * @expiremental
+     *
+     * @param res the response object
+     * @returns the extracted error information
+     */
+    static extractAPIErrorFromResponse(res, defaultErrorMessage = 'The request failed') {
+        let message = defaultErrorMessage;
+        // Use res.data as the error message
+        if (typeof res.data === 'string') {
+            message = res.data;
+        }
+        if (res.data &&
+            typeof res.data === 'object' &&
+            'error' in res.data &&
+            res.data.error &&
+            !res.ok) {
+            if (typeof res.data.error === 'string') {
+                return {
+                    message: res.data.error,
+                    code: res.status,
+                    status: res.statusText,
+                };
+            }
+            if (typeof res.data.error === 'object') {
+                // extract status from data.message
+                message =
+                    'message' in res.data.error &&
+                        typeof res.data.error.message === 'string'
+                        ? res.data.error.message
+                        : message;
+                // extract status from data.error
+                const status = 'status' in res.data.error &&
+                    typeof res.data.error.status === 'string'
+                    ? res.data.error.status
+                    : res.statusText;
+                // extract code from data.error
+                const code = 'code' in res.data.error && typeof res.data.error.code === 'number'
+                    ? res.data.error.code
+                    : res.status;
+                if ('errors' in res.data.error &&
+                    Array.isArray(res.data.error.errors)) {
+                    const errorMessages = [];
+                    for (const e of res.data.error.errors) {
+                        if (typeof e === 'object' &&
+                            'message' in e &&
+                            typeof e.message === 'string') {
+                            errorMessages.push(e.message);
+                        }
+                    }
+                    return Object.assign({
+                        message: errorMessages.join('\n') || message,
+                        code,
+                        status,
+                    }, res.data.error);
+                }
+                return Object.assign({
+                    message,
+                    code,
+                    status,
+                }, res.data.error);
+            }
+        }
+        return {
+            message,
+            code: res.status,
+            status: res.statusText,
+        };
+    }
+}
+exports.GaxiosError = GaxiosError;
+function translateData(responseType, data) {
+    switch (responseType) {
+        case 'stream':
+            return data;
+        case 'json':
+            return JSON.parse(JSON.stringify(data));
+        case 'arraybuffer':
+            return JSON.parse(Buffer.from(data).toString('utf8'));
+        case 'blob':
+            return JSON.parse(data.text());
+        default:
+            return data;
+    }
+}
+/**
+ * An experimental error redactor.
+ *
+ * @param config Config to potentially redact properties of
+ * @param response Config to potentially redact properties of
+ *
+ * @experimental
+ */
+function defaultErrorRedactor(data) {
+    const REDACT = '<<REDACTED> - See `errorRedactor` option in `gaxios` for configuration>.';
+    function redactHeaders(headers) {
+        if (!headers)
+            return;
+        headers.forEach((_, key) => {
+            // any casing of `Authentication`
+            // any casing of `Authorization`
+            // anything containing secret, such as 'client secret'
+            if (/^authentication$/i.test(key) ||
+                /^authorization$/i.test(key) ||
+                /secret/i.test(key))
+                headers.set(key, REDACT);
+        });
+    }
+    function redactString(obj, key) {
+        if (typeof obj === 'object' &&
+            obj !== null &&
+            typeof obj[key] === 'string') {
+            const text = obj[key];
+            if (/grant_type=/i.test(text) ||
+                /assertion=/i.test(text) ||
+                /secret/i.test(text)) {
+                obj[key] = REDACT;
+            }
+        }
+    }
+    function redactObject(obj) {
+        if (!obj || typeof obj !== 'object') {
+            return;
+        }
+        else if (obj instanceof FormData ||
+            obj instanceof URLSearchParams ||
+            // support `node-fetch` FormData/URLSearchParams
+            ('forEach' in obj && 'set' in obj)) {
+            obj.forEach((_, key) => {
+                if (['grant_type', 'assertion'].includes(key) || /secret/.test(key)) {
+                    obj.set(key, REDACT);
+                }
+            });
+        }
+        else {
+            if ('grant_type' in obj) {
+                obj['grant_type'] = REDACT;
+            }
+            if ('assertion' in obj) {
+                obj['assertion'] = REDACT;
+            }
+            if ('client_secret' in obj) {
+                obj['client_secret'] = REDACT;
+            }
+        }
+    }
+    if (data.config) {
+        redactHeaders(data.config.headers);
+        redactString(data.config, 'data');
+        redactObject(data.config.data);
+        redactString(data.config, 'body');
+        redactObject(data.config.body);
+        if (data.config.url.searchParams.has('token')) {
+            data.config.url.searchParams.set('token', REDACT);
+        }
+        if (data.config.url.searchParams.has('client_secret')) {
+            data.config.url.searchParams.set('client_secret', REDACT);
+        }
+    }
+    if (data.response) {
+        defaultErrorRedactor({ config: data.response.config });
+        redactHeaders(data.response.headers);
+        // workaround for `node-fetch`'s `.data` deprecation...
+        if (data.response.bodyUsed) {
+            redactString(data.response, 'data');
+            redactObject(data.response.data);
+        }
+    }
+    return data;
+}
+//# sourceMappingURL=common.js.map
+
+/***/ }),
+
+/***/ 4051:
+/***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
+
+
+// Copyright 2018 Google LLC
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//    http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+var _a;
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.Gaxios = void 0;
+const extend_1 = __importDefault(__nccwpck_require__(3860));
+const https_1 = __nccwpck_require__(5692);
+const common_js_1 = __nccwpck_require__(4763);
+const retry_js_1 = __nccwpck_require__(9106);
+const stream_1 = __nccwpck_require__(2203);
+const interceptor_js_1 = __nccwpck_require__(1755);
+const randomUUID = async () => globalThis.crypto?.randomUUID() || (await Promise.resolve(/* import() */).then(__nccwpck_require__.t.bind(__nccwpck_require__, 6982, 23))).randomUUID();
+const HTTP_STATUS_NO_CONTENT = 204;
+class Gaxios {
+    agentCache = new Map();
+    /**
+     * Default HTTP options that will be used for every HTTP request.
+     */
+    defaults;
+    /**
+     * Interceptors
+     */
+    interceptors;
+    /**
+     * The Gaxios class is responsible for making HTTP requests.
+     * @param defaults The default set of options to be used for this instance.
+     */
+    constructor(defaults) {
+        this.defaults = defaults || {};
+        this.interceptors = {
+            request: new interceptor_js_1.GaxiosInterceptorManager(),
+            response: new interceptor_js_1.GaxiosInterceptorManager(),
+        };
+    }
+    /**
+     * A {@link fetch `fetch`} compliant API for {@link Gaxios}.
+     *
+     * @remarks
+     *
+     * This is useful as a drop-in replacement for `fetch` API usage.
+     *
+     * @example
+     *
+     * ```ts
+     * const gaxios = new Gaxios();
+     * const myFetch: typeof fetch = (...args) => gaxios.fetch(...args);
+     * await myFetch('https://example.com');
+     * ```
+     *
+     * @param args `fetch` API or `Gaxios#request` parameters
+     * @returns the {@link Response} with Gaxios-added properties
+     */
+    fetch(...args) {
+        // Up to 2 parameters in either overload
+        const input = args[0];
+        const init = args[1];
+        let url = undefined;
+        const headers = new Headers();
+        // prepare URL
+        if (typeof input === 'string') {
+            url = new URL(input);
+        }
+        else if (input instanceof URL) {
+            url = input;
+        }
+        else if (input && input.url) {
+            url = new URL(input.url);
+        }
+        // prepare headers
+        if (input && typeof input === 'object' && 'headers' in input) {
+            _a.mergeHeaders(headers, input.headers);
+        }
+        if (init) {
+            _a.mergeHeaders(headers, new Headers(init.headers));
+        }
+        // prepare request
+        if (typeof input === 'object' && !(input instanceof URL)) {
+            // input must have been a non-URL object
+            return this.request({ ...init, ...input, headers, url });
+        }
+        else {
+            // input must have been a string or URL
+            return this.request({ ...init, headers, url });
+        }
+    }
+    /**
+     * Perform an HTTP request with the given options.
+     * @param opts Set of HTTP options that will be used for this HTTP request.
+     */
+    async request(opts = {}) {
+        let prepared = await this.#prepareRequest(opts);
+        prepared = await this.#applyRequestInterceptors(prepared);
+        return this.#applyResponseInterceptors(this._request(prepared));
+    }
+    async _defaultAdapter(config) {
+        const fetchImpl = config.fetchImplementation ||
+            this.defaults.fetchImplementation ||
+            (await _a.#getFetch());
+        // node-fetch v3 warns when `data` is present
+        // https://github.com/node-fetch/node-fetch/issues/1000
+        const preparedOpts = { ...config };
+        delete preparedOpts.data;
+        const res = (await fetchImpl(config.url, preparedOpts));
+        const data = await this.getResponseData(config, res);
+        if (!Object.getOwnPropertyDescriptor(res, 'data')?.configurable) {
+            // Work-around for `node-fetch` v3 as accessing `data` would otherwise throw
+            Object.defineProperties(res, {
+                data: {
+                    configurable: true,
+                    writable: true,
+                    enumerable: true,
+                    value: data,
+                },
+            });
+        }
+        // Keep object as an instance of `Response`
+        return Object.assign(res, { config, data });
+    }
+    /**
+     * Internal, retryable version of the `request` method.
+     * @param opts Set of HTTP options that will be used for this HTTP request.
+     */
+    async _request(opts) {
+        try {
+            let translatedResponse;
+            if (opts.adapter) {
+                translatedResponse = await opts.adapter(opts, this._defaultAdapter.bind(this));
+            }
+            else {
+                translatedResponse = await this._defaultAdapter(opts);
+            }
+            if (!opts.validateStatus(translatedResponse.status)) {
+                if (opts.responseType === 'stream') {
+                    const response = [];
+                    for await (const chunk of translatedResponse.data) {
+                        response.push(chunk);
+                    }
+                    translatedResponse.data = Buffer.concat(response.map(c => (typeof c === 'string' ? Buffer.from(c) : c))).toString('utf8');
+                }
+                const errorInfo = common_js_1.GaxiosError.extractAPIErrorFromResponse(translatedResponse, `Request failed with status code ${translatedResponse.status}`);
+                throw new common_js_1.GaxiosError(errorInfo?.message, opts, translatedResponse, errorInfo);
+            }
+            return translatedResponse;
+        }
+        catch (e) {
+            let err;
+            if (e instanceof common_js_1.GaxiosError) {
+                err = e;
+            }
+            else if (e instanceof Error) {
+                err = new common_js_1.GaxiosError(e.message, opts, undefined, e);
+            }
+            else if (opts.signal?.aborted) {
+                err = new common_js_1.GaxiosError(`The operation was aborted: ${e}`, opts, undefined, e);
+                err.code = 'AbortError';
+            }
+            else {
+                err = new common_js_1.GaxiosError('Unexpected Gaxios Error', opts, undefined, e);
+            }
+            // When `opts.timeout` is configured, `#appendTimeoutToSignal` attaches
+            // `AbortSignal.timeout(opts.timeout)` to `opts.signal`, which sets
+            // `opts.signal.reason` to a `TimeoutError` `DOMException` when it fires.
+            // However, `node-fetch` rejects an aborted signal with a generic
+            // `AbortError` ('The user aborted a request.') rather than
+            // `opts.signal.reason`, and Bun's native `AbortSignal.timeout` uses the
+            // message 'The operation timed out.' instead of V8's 'The operation was
+            // aborted due to timeout'. Normalizing `err.code = 'TimeoutError'` and
+            // ensuring `err.message` describes the timeout allows `getRetryConfig` /
+            // `shouldRetryRequest` to recognize the error as a retriable timeout.
+            if (!err.response &&
+                opts.signal?.aborted &&
+                opts.signal.reason?.name === 'TimeoutError') {
+                err.code = 'TimeoutError';
+                if (!/timeout|timed out/i.test(err.message)) {
+                    err.message = 'The operation was aborted due to timeout';
+                }
+            }
+            else if (!err.response &&
+                opts.signal?.aborted &&
+                err.code !== 'TimeoutError') {
+                err.code ||= 'AbortError';
+            }
+            const { shouldRetry, config } = await (0, retry_js_1.getRetryConfig)(err);
+            if (shouldRetry && config) {
+                err.config.retryConfig.currentRetryAttempt =
+                    config.retryConfig.currentRetryAttempt;
+                // The error's config could be redacted - therefore we only want to
+                // copy the retry state over to the existing config
+                opts.retryConfig = err.config?.retryConfig;
+                if (typeof err.config?.timeout === 'number') {
+                    opts.timeout = err.config.timeout;
+                }
+                // re-prepare timeout for the next request
+                this.#appendTimeoutToSignal(opts);
+                return this._request(opts);
+            }
+            if (opts.errorRedactor) {
+                opts.errorRedactor(err);
+            }
+            throw err;
+        }
+    }
+    async getResponseData(opts, res) {
+        if (res.status === HTTP_STATUS_NO_CONTENT) {
+            return '';
+        }
+        if (opts.maxContentLength &&
+            res.headers.has('content-length') &&
+            opts.maxContentLength <
+                Number.parseInt(res.headers?.get('content-length') || '')) {
+            throw new common_js_1.GaxiosError("Response's `Content-Length` is over the limit.", opts, Object.assign(res, { config: opts }));
+        }
+        switch (opts.responseType) {
+            case 'stream':
+                return res.body;
+            case 'json': {
+                const data = await res.text();
+                try {
+                    return JSON.parse(data);
+                }
+                catch {
+                    return data;
+                }
+            }
+            case 'arraybuffer':
+                return res.arrayBuffer();
+            case 'blob':
+                return res.blob();
+            case 'text':
+                return res.text();
+            default:
+                return this.getResponseDataFromContentType(res);
+        }
+    }
+    #urlMayUseProxy(url, noProxy = []) {
+        const candidate = new URL(url);
+        const noProxyList = [...noProxy];
+        const noProxyEnvList = (process.env.NO_PROXY ?? process.env.no_proxy)?.split(',') || [];
+        for (const rule of noProxyEnvList) {
+            noProxyList.push(rule.trim());
+        }
+        for (const rule of noProxyList) {
+            // Match regex
+            if (rule instanceof RegExp) {
+                if (rule.test(candidate.toString())) {
+                    return false;
+                }
+            }
+            // Match URL
+            else if (rule instanceof URL) {
+                if (rule.origin === candidate.origin) {
+                    return false;
+                }
+            }
+            // Match string regex
+            else if (rule.startsWith('*.') || rule.startsWith('.')) {
+                const cleanedRule = rule.replace(/^\*\./, '.');
+                if (candidate.hostname.endsWith(cleanedRule)) {
+                    return false;
+                }
+            }
+            // Basic string match
+            else if (rule === candidate.origin ||
+                rule === candidate.hostname ||
+                rule === candidate.href) {
+                return false;
+            }
+        }
+        return true;
+    }
+    /**
+     * Applies the request interceptors. The request interceptors are applied after the
+     * call to prepareRequest is completed.
+     *
+     * @param {GaxiosOptionsPrepared} options The current set of options.
+     *
+     * @returns {Promise<GaxiosOptionsPrepared>} Promise that resolves to the set of options or response after interceptors are applied.
+     */
+    async #applyRequestInterceptors(options) {
+        let promiseChain = Promise.resolve(options);
+        for (const interceptor of this.interceptors.request.values()) {
+            if (interceptor) {
+                promiseChain = promiseChain.then(interceptor.resolved, interceptor.rejected);
+            }
+        }
+        return promiseChain;
+    }
+    /**
+     * Applies the response interceptors. The response interceptors are applied after the
+     * call to request is made.
+     *
+     * @param {GaxiosOptionsPrepared} options The current set of options.
+     *
+     * @returns {Promise<GaxiosOptionsPrepared>} Promise that resolves to the set of options or response after interceptors are applied.
+     */
+    async #applyResponseInterceptors(response) {
+        let promiseChain = Promise.resolve(response);
+        for (const interceptor of this.interceptors.response.values()) {
+            if (interceptor) {
+                promiseChain = promiseChain.then(interceptor.resolved, interceptor.rejected);
+            }
+        }
+        return promiseChain;
+    }
+    /**
+     * Validates the options, merges them with defaults, and prepare request.
+     *
+     * @param options The original options passed from the client.
+     * @returns Prepared options, ready to make a request
+     */
+    async #prepareRequest(options) {
+        // Prepare Headers - copy in order to not mutate the original objects
+        const preparedHeaders = new Headers(this.defaults.headers);
+        _a.mergeHeaders(preparedHeaders, options.headers);
+        // Merge options
+        const opts = (0, extend_1.default)(true, {}, this.defaults, options);
+        if (!opts.url) {
+            throw new Error('URL is required.');
+        }
+        if (opts.baseURL) {
+            opts.url = new URL(opts.url, opts.baseURL);
+        }
+        // don't modify the properties of a default or provided URL
+        opts.url = new URL(opts.url);
+        if (opts.params) {
+            if (opts.paramsSerializer) {
+                let additionalQueryParams = opts.paramsSerializer(opts.params);
+                if (additionalQueryParams.startsWith('?')) {
+                    additionalQueryParams = additionalQueryParams.slice(1);
+                }
+                const prefix = opts.url.toString().includes('?') ? '&' : '?';
+                opts.url = opts.url + prefix + additionalQueryParams;
+            }
+            else {
+                const url = opts.url instanceof URL ? opts.url : new URL(opts.url);
+                for (const [key, value] of new URLSearchParams(opts.params)) {
+                    url.searchParams.append(key, value);
+                }
+                opts.url = url;
+            }
+        }
+        if (typeof options.maxContentLength === 'number') {
+            opts.size = options.maxContentLength;
+        }
+        if (typeof options.maxRedirects === 'number') {
+            opts.follow = options.maxRedirects;
+        }
+        const shouldDirectlyPassData = typeof opts.data === 'string' ||
+            opts.data instanceof ArrayBuffer ||
+            opts.data instanceof Blob ||
+            // Node 18 does not have a global `File` object
+            (globalThis.File && opts.data instanceof File) ||
+            opts.data instanceof FormData ||
+            opts.data instanceof stream_1.Readable ||
+            opts.data instanceof ReadableStream ||
+            opts.data instanceof String ||
+            opts.data instanceof URLSearchParams ||
+            ArrayBuffer.isView(opts.data) || // `Buffer` (Node.js), `DataView`, `TypedArray`
+            /**
+             * @deprecated `node-fetch` or another third-party's request types
+             */
+            ['Blob', 'File', 'FormData'].includes(opts.data?.constructor?.name || '');
+        if (opts.multipart?.length) {
+            const boundary = await randomUUID();
+            preparedHeaders.set('content-type', `multipart/related; boundary=${boundary}`);
+            opts.body = stream_1.Readable.from(this.getMultipartRequest(opts.multipart, boundary));
+        }
+        else if (shouldDirectlyPassData) {
+            opts.body = opts.data;
+        }
+        else if (typeof opts.data === 'object') {
+            if (preparedHeaders.get('Content-Type') ===
+                'application/x-www-form-urlencoded') {
+                // If www-form-urlencoded content type has been set, but data is
+                // provided as an object, serialize the content
+                opts.body = opts.paramsSerializer
+                    ? opts.paramsSerializer(opts.data)
+                    : new URLSearchParams(opts.data);
+            }
+            else {
+                if (!preparedHeaders.has('content-type')) {
+                    preparedHeaders.set('content-type', 'application/json');
+                }
+                opts.body = JSON.stringify(opts.data);
+            }
+        }
+        else if (opts.data) {
+            opts.body = opts.data;
+        }
+        opts.validateStatus = opts.validateStatus || this.validateStatus;
+        opts.responseType = opts.responseType || 'unknown';
+        if (!preparedHeaders.has('accept') && opts.responseType === 'json') {
+            preparedHeaders.set('accept', 'application/json');
+        }
+        const proxy = opts.proxy ||
+            process?.env?.HTTPS_PROXY ||
+            process?.env?.https_proxy ||
+            process?.env?.HTTP_PROXY ||
+            process?.env?.http_proxy;
+        if (opts.agent) {
+            // don't do any of the following options - use the user-provided agent.
+        }
+        else if (proxy && this.#urlMayUseProxy(opts.url, opts.noProxy)) {
+            const HttpsProxyAgent = await _a.#getProxyAgent();
+            if (this.agentCache.has(proxy)) {
+                opts.agent = this.agentCache.get(proxy);
+            }
+            else {
+                opts.agent = new HttpsProxyAgent(proxy, {
+                    cert: opts.cert,
+                    key: opts.key,
+                });
+                this.agentCache.set(proxy, opts.agent);
+            }
+        }
+        else if (opts.cert && opts.key) {
+            // Configure client for mTLS
+            if (this.agentCache.has(opts.key)) {
+                opts.agent = this.agentCache.get(opts.key);
+            }
+            else {
+                opts.agent = new https_1.Agent({
+                    cert: opts.cert,
+                    key: opts.key,
+                });
+                this.agentCache.set(opts.key, opts.agent);
+            }
+        }
+        if (typeof opts.errorRedactor !== 'function' &&
+            opts.errorRedactor !== false) {
+            opts.errorRedactor = common_js_1.defaultErrorRedactor;
+        }
+        if (opts.body && !('duplex' in opts)) {
+            /**
+             * required for Node.js and the type isn't available today
+             * @link https://github.com/nodejs/node/issues/46221
+             * @link https://github.com/microsoft/TypeScript-DOM-lib-generator/issues/1483
+             */
+            opts.duplex = 'half';
+        }
+        this.#appendTimeoutToSignal(opts);
+        return Object.assign(opts, {
+            headers: preparedHeaders,
+            url: opts.url instanceof URL ? opts.url : new URL(opts.url),
+        });
+    }
+    #callerSignals = new WeakMap();
+    #appendTimeoutToSignal(opts) {
+        if (opts.timeout) {
+            if (!this.#callerSignals.has(opts)) {
+                this.#callerSignals.set(opts, opts.signal ?? undefined);
+            }
+            const callerSignal = this.#callerSignals.get(opts);
+            const timeoutSignal = AbortSignal.timeout(opts.timeout);
+            if (callerSignal) {
+                opts.signal = AbortSignal.any([callerSignal, timeoutSignal]);
+            }
+            else {
+                opts.signal = timeoutSignal;
+            }
+        }
+    }
+    /**
+     * By default, throw for any non-2xx status code
+     * @param status status code from the HTTP response
+     */
+    validateStatus(status) {
+        return status >= 200 && status < 300;
+    }
+    /**
+     * Attempts to parse a response by looking at the Content-Type header.
+     * @param {Response} response the HTTP response.
+     * @returns a promise that resolves to the response data.
+     */
+    async getResponseDataFromContentType(response) {
+        let contentType = response.headers.get('Content-Type');
+        if (contentType === null) {
+            // Maintain existing functionality by calling text()
+            return response.text();
+        }
+        contentType = contentType.toLowerCase();
+        if (contentType.includes('application/json')) {
+            let data = await response.text();
+            try {
+                data = JSON.parse(data);
+            }
+            catch {
+                // continue
+            }
+            return data;
+        }
+        else if (contentType.match(/^text\//)) {
+            return response.text();
+        }
+        else {
+            // If the content type is something not easily handled, just return the raw data (blob)
+            return response.blob();
+        }
+    }
+    /**
+     * Creates an async generator that yields the pieces of a multipart/related request body.
+     * This implementation follows the spec: https://www.ietf.org/rfc/rfc2387.txt. However, recursive
+     * multipart/related requests are not currently supported.
+     *
+     * @param {GaxiosMultipartOptions[]} multipartOptions the pieces to turn into a multipart/related body.
+     * @param {string} boundary the boundary string to be placed between each part.
+     */
+    async *getMultipartRequest(multipartOptions, boundary) {
+        const finale = `--${boundary}--`;
+        for (const currentPart of multipartOptions) {
+            const partContentType = currentPart.headers.get('Content-Type') || 'application/octet-stream';
+            const preamble = `--${boundary}\r\nContent-Type: ${partContentType}\r\n\r\n`;
+            yield preamble;
+            if (typeof currentPart.content === 'string') {
+                yield currentPart.content;
+            }
+            else {
+                yield* currentPart.content;
+            }
+            yield '\r\n';
+        }
+        yield finale;
+    }
+    /**
+     * A cache for the lazily-loaded proxy agent.
+     *
+     * Should use {@link Gaxios[#getProxyAgent]} to retrieve.
+     */
+    // using `import` to dynamically import the types here
+    static #proxyAgent;
+    /**
+     * A cache for the lazily-loaded fetch library.
+     *
+     * Should use {@link Gaxios[#getFetch]} to retrieve.
+     */
+    //
+    static #fetch;
+    static #bunFetch;
+    /**
+     * Imports, caches, and returns a proxy agent - if not already imported
+     *
+     * @returns A proxy agent
+     */
+    static async #getProxyAgent() {
+        this.#proxyAgent ||= (await __nccwpck_require__.e(/* import() */ 669).then(__nccwpck_require__.t.bind(__nccwpck_require__, 3669, 23))).HttpsProxyAgent;
+        return this.#proxyAgent;
+    }
+    static #createBunFetch() {
+        return async (input, init) => {
+            const rawInit = init
+                ? { ...init }
+                : undefined;
+            if (rawInit) {
+                const proxyAgent = rawInit.agent;
+                if (proxyAgent?.proxy) {
+                    rawInit.proxy = proxyAgent.proxy.toString();
+                }
+                else {
+                    delete rawInit.proxy;
+                }
+                const cert = rawInit.cert ?? proxyAgent?.connectOpts?.cert;
+                const key = rawInit.key ?? proxyAgent?.connectOpts?.key;
+                if (cert && key) {
+                    rawInit.tls = {
+                        ...rawInit.tls,
+                        cert,
+                        key,
+                    };
+                }
+            }
+            let fetchInit = rawInit;
+            if (fetchInit?.body &&
+                typeof fetchInit.body === 'object' &&
+                typeof fetchInit.body.pipe === 'function' &&
+                typeof stream_1.Readable.toWeb === 'function' &&
+                (typeof ReadableStream === 'undefined' ||
+                    !(fetchInit.body instanceof ReadableStream))) {
+                let stream;
+                if (fetchInit.body instanceof stream_1.Readable &&
+                    !fetchInit.body.readableObjectMode) {
+                    stream = fetchInit.body;
+                }
+                else {
+                    const passThrough = new stream_1.PassThrough();
+                    const src = fetchInit.body;
+                    (0, stream_1.pipeline)(src, passThrough, () => { });
+                    stream = passThrough;
+                }
+                fetchInit = {
+                    ...fetchInit,
+                    body: stream_1.Readable.toWeb(stream),
+                };
+            }
+            let res;
+            try {
+                res = await globalThis.fetch(input, fetchInit);
+            }
+            catch (err) {
+                const errorObj = err;
+                if (errorObj?.code === 'ConnectionRefused' ||
+                    errorObj?.code === 'FailedToOpenSocket') {
+                    errorObj.code = 'ECONNREFUSED';
+                }
+                else if (errorObj?.code === 'ConnectionReset' ||
+                    errorObj?.code === 'ConnectionClosed') {
+                    errorObj.code = 'ECONNRESET';
+                }
+                if (!(err instanceof Error) &&
+                    err &&
+                    typeof err === 'object' &&
+                    !init?.signal?.aborted) {
+                    throw Object.assign(new Error(errorObj.message || errorObj.code || 'Error'), err);
+                }
+                throw err;
+            }
+            if (res?.body &&
+                typeof stream_1.Readable.fromWeb === 'function' &&
+                !(res.body instanceof stream_1.Readable)) {
+                let nodeStream;
+                const rawBody = res.body;
+                const origText = res.text.bind(res);
+                const origJson = res.json.bind(res);
+                const origArrayBuffer = res.arrayBuffer.bind(res);
+                const origBlob = res.blob.bind(res);
+                const readBuffer = async () => {
+                    const chunks = [];
+                    for await (const chunk of nodeStream) {
+                        chunks.push(Buffer.isBuffer(chunk) ? chunk : Buffer.from(chunk));
+                    }
+                    return Buffer.concat(chunks);
+                };
+                Object.defineProperty(res, 'body', {
+                    get() {
+                        nodeStream ||= stream_1.Readable.fromWeb(rawBody);
+                        return nodeStream;
+                    },
+                    configurable: true,
+                    enumerable: true,
+                });
+                res.text = async () => {
+                    if (!nodeStream)
+                        return origText();
+                    return (await readBuffer()).toString('utf8');
+                };
+                res.json = async () => {
+                    if (!nodeStream)
+                        return origJson();
+                    return JSON.parse(await res.text());
+                };
+                res.arrayBuffer = async () => {
+                    if (!nodeStream)
+                        return origArrayBuffer();
+                    const buf = await readBuffer();
+                    return buf.buffer.slice(buf.byteOffset, buf.byteOffset + buf.byteLength);
+                };
+                res.blob = async () => {
+                    if (!nodeStream)
+                        return origBlob();
+                    const buf = await readBuffer();
+                    const contentType = res.headers?.get?.('content-type') ?? '';
+                    return new Blob([buf], contentType ? { type: contentType } : undefined);
+                };
+            }
+            return res;
+        };
+    }
+    static async #getFetch() {
+        const hasWindow = typeof window !== 'undefined' && !!window;
+        if (hasWindow) {
+            this.#fetch ||= window.fetch;
+            return this.#fetch;
+        }
+        if ('Bun' in globalThis && typeof globalThis.fetch === 'function') {
+            this.#bunFetch ||= this.#createBunFetch();
+            return this.#bunFetch;
+        }
+        this.#fetch ||= (await __nccwpck_require__.e(/* import() */ 816).then(__nccwpck_require__.bind(__nccwpck_require__, 816))).default;
+        return this.#fetch;
+    }
+    /**
+     * Merges headers.
+     * If the base headers do not exist a new `Headers` object will be returned.
+     *
+     * @remarks
+     *
+     * Using this utility can be helpful when the headers are not known to exist:
+     * - if they exist as `Headers`, that instance will be used
+     *   - it improves performance and allows users to use their existing references to their `Headers`
+     * - if they exist in another form (`HeadersInit`), they will be used to create a new `Headers` object
+     * - if the base headers do not exist a new `Headers` object will be created
+     *
+     * @param base headers to append/overwrite to
+     * @param append headers to append/overwrite with
+     * @returns the base headers instance with merged `Headers`
+     */
+    static mergeHeaders(base, ...append) {
+        base = base instanceof Headers ? base : new Headers(base);
+        for (const headers of append) {
+            const add = headers instanceof Headers ? headers : new Headers(headers);
+            add.forEach((value, key) => {
+                // set-cookie is the only header that would repeat.
+                // A bit of background: https://developer.mozilla.org/en-US/docs/Web/API/Headers/getSetCookie
+                key === 'set-cookie' ? base.append(key, value) : base.set(key, value);
+            });
+        }
+        return base;
+    }
+}
+exports.Gaxios = Gaxios;
+_a = Gaxios;
+//# sourceMappingURL=gaxios.js.map
+
+/***/ }),
+
+/***/ 9816:
+/***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
+
+
+// Copyright 2018 Google LLC
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//    http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __exportStar = (this && this.__exportStar) || function(m, exports) {
+    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.instance = exports.Gaxios = exports.GaxiosError = void 0;
+exports.request = request;
+const gaxios_js_1 = __nccwpck_require__(4051);
+Object.defineProperty(exports, "Gaxios", ({ enumerable: true, get: function () { return gaxios_js_1.Gaxios; } }));
+var common_js_1 = __nccwpck_require__(4763);
+Object.defineProperty(exports, "GaxiosError", ({ enumerable: true, get: function () { return common_js_1.GaxiosError; } }));
+__exportStar(__nccwpck_require__(1755), exports);
+/**
+ * The default instance used when the `request` method is directly
+ * invoked.
+ */
+exports.instance = new gaxios_js_1.Gaxios();
+/**
+ * Make an HTTP request using the given options.
+ * @param opts Options for the request
+ */
+async function request(opts) {
+    return exports.instance.request(opts);
+}
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ 1755:
+/***/ ((__unused_webpack_module, exports) => {
+
+
+// Copyright 2024 Google LLC
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//    http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.GaxiosInterceptorManager = void 0;
+/**
+ * Class to manage collections of GaxiosInterceptors for both requests and responses.
+ */
+class GaxiosInterceptorManager extends Set {
+}
+exports.GaxiosInterceptorManager = GaxiosInterceptorManager;
+//# sourceMappingURL=interceptor.js.map
+
+/***/ }),
+
+/***/ 9106:
+/***/ ((__unused_webpack_module, exports) => {
+
+
+// Copyright 2018 Google LLC
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//    http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.getRetryConfig = getRetryConfig;
+async function getRetryConfig(err) {
+    let config = getConfig(err);
+    if (!err || !err.config || (!config && !err.config.retry)) {
+        return { shouldRetry: false };
+    }
+    config = config || {};
+    config.currentRetryAttempt = config.currentRetryAttempt || 0;
+    config.retry =
+        config.retry === undefined || config.retry === null ? 3 : config.retry;
+    config.httpMethodsToRetry = config.httpMethodsToRetry || [
+        'GET',
+        'HEAD',
+        'PUT',
+        'OPTIONS',
+        'DELETE',
+    ];
+    config.noResponseRetries =
+        config.noResponseRetries === undefined || config.noResponseRetries === null
+            ? 2
+            : config.noResponseRetries;
+    config.retryDelayMultiplier = config.retryDelayMultiplier
+        ? config.retryDelayMultiplier
+        : 2;
+    config.timeOfFirstRequest = config.timeOfFirstRequest
+        ? config.timeOfFirstRequest
+        : Date.now();
+    config.totalTimeout = config.totalTimeout
+        ? config.totalTimeout
+        : Number.MAX_SAFE_INTEGER;
+    config.maxRetryDelay = config.maxRetryDelay
+        ? config.maxRetryDelay
+        : Number.MAX_SAFE_INTEGER;
+    // If this wasn't in the list of status codes where we want
+    // to automatically retry, return.
+    const retryRanges = [
+        // https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
+        // 1xx - Retry (Informational, request still processing)
+        // 2xx - Do not retry (Success)
+        // 3xx - Do not retry (Redirect)
+        // 4xx - Do not retry (Client errors)
+        // 408 - Retry ("Request Timeout")
+        // 429 - Retry ("Too Many Requests")
+        // 5xx - Retry (Server errors)
+        [100, 199],
+        [408, 408],
+        [429, 429],
+        [500, 599],
+    ];
+    config.statusCodesToRetry = config.statusCodesToRetry || retryRanges;
+    // Put the config back into the err
+    err.config.retryConfig = config;
+    // Determine if we should retry the request
+    const shouldRetryFn = config.shouldRetry || shouldRetryRequest;
+    if (!(await shouldRetryFn(err))) {
+        return { shouldRetry: false, config: err.config };
+    }
+    const delay = getNextRetryDelay(config);
+    // We're going to retry!  Increment the counter.
+    err.config.retryConfig.currentRetryAttempt += 1;
+    // Create a promise that invokes the retry after the backOffDelay
+    const backoff = config.retryBackoff
+        ? config.retryBackoff(err, delay)
+        : new Promise(resolve => {
+            setTimeout(resolve, delay);
+        });
+    // Notify the user if they added an `onRetryAttempt` handler
+    if (config.onRetryAttempt) {
+        await config.onRetryAttempt(err);
+    }
+    // Return the promise in which recalls Gaxios to retry the request
+    await backoff;
+    return { shouldRetry: true, config: err.config };
+}
+/**
+ * Determine based on config if we should retry the request.
+ * @param err The GaxiosError passed to the interceptor.
+ */
+function shouldRetryRequest(err) {
+    const config = getConfig(err);
+    // Classify the error as a timeout if `err.code` is already `'TimeoutError'`
+    // (e.g., extracted from a `DOMException` cause or normalized in `_request`)
+    // or if the request's `AbortSignal` aborted with a `'TimeoutError'` reason
+    // from `AbortSignal.timeout()` (which can happen when `node-fetch` or a
+    // custom/shimmed fetch adapter in Node.js or Bun rejects with a generic
+    // `AbortError` instead of propagating `signal.reason`).
+    const isTimeoutError = err.code === 'TimeoutError' ||
+        err.config?.signal?.reason?.name === 'TimeoutError';
+    // User-initiated aborts (`signal.aborted` or `AbortError`) should not be
+    // retried, except when the abort was triggered by a request timeout.
+    if ((err.config?.signal?.aborted && !isTimeoutError) ||
+        (err.code === 'AbortError' && !isTimeoutError)) {
+        return false;
+    }
+    // If there's no config, or retries are disabled, return.
+    if (!config || config.retry === 0) {
+        return false;
+    }
+    // Check if this error has no response (ETIMEDOUT, ENOTFOUND, etc)
+    if (!err.response &&
+        (config.currentRetryAttempt || 0) >= config.noResponseRetries) {
+        return false;
+    }
+    // Only retry with configured HttpMethods.
+    if (!config.httpMethodsToRetry ||
+        !config.httpMethodsToRetry.includes(err.config.method?.toUpperCase() || 'GET')) {
+        return false;
+    }
+    // If this wasn't in the list of status codes where we want
+    // to automatically retry, return.
+    if (err.response && err.response.status) {
+        let isInRange = false;
+        for (const [min, max] of config.statusCodesToRetry) {
+            const status = err.response.status;
+            if (status >= min && status <= max) {
+                isInRange = true;
+                break;
+            }
+        }
+        if (!isInRange) {
+            return false;
+        }
+    }
+    // If we are out of retry attempts, return
+    config.currentRetryAttempt = config.currentRetryAttempt || 0;
+    if (config.currentRetryAttempt >= config.retry) {
+        return false;
+    }
+    return true;
+}
+/**
+ * Acquire the raxConfig object from an GaxiosError if available.
+ * @param err The Gaxios error with a config object.
+ */
+function getConfig(err) {
+    if (err && err.config && err.config.retryConfig) {
+        return err.config.retryConfig;
+    }
+    return;
+}
+/**
+ * Gets the delay to wait before the next retry.
+ *
+ * @param {RetryConfig} config The current set of retry options
+ * @returns {number} the amount of ms to wait before the next retry attempt.
+ */
+function getNextRetryDelay(config) {
+    // Calculate time to wait with exponential backoff.
+    // If this is the first retry, look for a configured retryDelay.
+    const retryDelay = config.currentRetryAttempt
+        ? 0
+        : (config.retryDelay ?? 100);
+    // Formula: retryDelay + ((retryDelayMultiplier^currentRetryAttempt - 1 / 2) * 1000)
+    const calculatedDelay = retryDelay +
+        ((Math.pow(config.retryDelayMultiplier, config.currentRetryAttempt) - 1) /
+            2) *
+            1000;
+    const maxAllowableDelay = config.totalTimeout - (Date.now() - config.timeOfFirstRequest);
+    return Math.min(calculatedDelay, maxAllowableDelay, config.maxRetryDelay);
+}
+//# sourceMappingURL=retry.js.map
+
+/***/ }),
+
+/***/ 8815:
+/***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
+
+
+// Copyright 2018 Google LLC
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//    http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.GaxiosError = exports.GAXIOS_ERROR_SYMBOL = void 0;
+exports.defaultErrorRedactor = defaultErrorRedactor;
+const extend_1 = __importDefault(__nccwpck_require__(3860));
+const util_cjs_1 = __importDefault(__nccwpck_require__(3761));
+const pkg = util_cjs_1.default.pkg;
+/**
+ * Support `instanceof` operator for `GaxiosError`s in different versions of this library.
+ *
+ * @see {@link GaxiosError[Symbol.hasInstance]}
+ */
+exports.GAXIOS_ERROR_SYMBOL = Symbol.for(`${pkg.name}-gaxios-error`);
+class GaxiosError extends Error {
+    config;
+    response;
+    /**
+     * An error code.
+     * Can be a system error code, DOMException error name, or any error's 'code' property where it is a `string`.
+     *
+     * It is only a `number` when the cause is sourced from an API-level error (AIP-193).
+     *
+     * @see {@link https://nodejs.org/api/errors.html#errorcode error.code}
+     * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/DOMException#error_names DOMException#error_names}
+     * @see {@link https://google.aip.dev/193#http11json-representation AIP-193}
+     *
+     * @example
+     * 'ECONNRESET'
+     *
+     * @example
+     * 'TimeoutError'
+     *
+     * @example
+     * 500
+     */
+    code;
+    /**
+     * An HTTP Status code.
+     * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/Response/status Response#status}
+     *
+     * @example
+     * 500
+     */
+    status;
+    /**
+     * @deprecated use {@link GaxiosError.cause} instead.
+     *
+     * @see {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error/cause Error#cause}
+     *
+     * @privateRemarks
+     *
+     * We will want to remove this property later as the modern `cause` property is better suited
+     * for displaying and relaying nested errors. Keeping this here makes the resulting
+     * error log larger than it needs to be.
+     *
+     */
+    error;
+    /**
+     * Support `instanceof` operator for `GaxiosError` across builds/duplicated files.
+     *
+     * @see {@link GAXIOS_ERROR_SYMBOL}
+     * @see {@link GaxiosError[Symbol.hasInstance]}
+     * @see {@link https://github.com/microsoft/TypeScript/issues/13965#issuecomment-278570200}
+     * @see {@link https://stackoverflow.com/questions/46618852/require-and-instanceof}
+     * @see {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/@@hasInstance#reverting_to_default_instanceof_behavior}
+     */
+    [exports.GAXIOS_ERROR_SYMBOL] = pkg.version;
+    /**
+     * Support `instanceof` operator for `GaxiosError` across builds/duplicated files.
+     *
+     * @see {@link GAXIOS_ERROR_SYMBOL}
+     * @see {@link GaxiosError[GAXIOS_ERROR_SYMBOL]}
+     */
+    static [Symbol.hasInstance](instance) {
+        if (instance &&
+            typeof instance === 'object' &&
+            exports.GAXIOS_ERROR_SYMBOL in instance &&
+            instance[exports.GAXIOS_ERROR_SYMBOL] === pkg.version) {
+            return true;
+        }
+        // fallback to native
+        return Function.prototype[Symbol.hasInstance].call(GaxiosError, instance);
+    }
+    constructor(message, config, response, cause) {
+        super(message, { cause });
+        this.config = config;
+        this.response = response;
+        this.error = cause instanceof Error ? cause : undefined;
+        // deep-copy config as we do not want to mutate
+        // the existing config for future retries/use
+        this.config = (0, extend_1.default)(true, {}, config);
+        if (this.response) {
+            this.response.config = (0, extend_1.default)(true, {}, this.response.config);
+        }
+        if (this.response) {
+            try {
+                this.response.data = translateData(this.config.responseType, 
+                // workaround for `node-fetch`'s `.data` deprecation...
+                this.response?.bodyUsed ? this.response?.data : undefined);
+            }
+            catch {
+                // best effort - don't throw an error within an error
+                // we could set `this.response.config.responseType = 'unknown'`, but
+                // that would mutate future calls with this config object.
+            }
+            this.status = this.response.status;
+        }
+        if (cause instanceof DOMException) {
+            // The DOMException's equivalent to code is its name
+            // E.g.: name = `TimeoutError`, code = number
+            // https://developer.mozilla.org/en-US/docs/Web/API/DOMException/name
+            this.code = cause.name;
+        }
+        else if (cause &&
+            typeof cause === 'object' &&
+            'code' in cause &&
+            (typeof cause.code === 'string' || typeof cause.code === 'number')) {
+            this.code = cause.code;
+        }
+    }
+    /**
+     * An AIP-193 conforming error extractor.
+     *
+     * @see {@link https://google.aip.dev/193#http11json-representation AIP-193}
+     *
+     * @internal
+     * @expiremental
+     *
+     * @param res the response object
+     * @returns the extracted error information
+     */
+    static extractAPIErrorFromResponse(res, defaultErrorMessage = 'The request failed') {
+        let message = defaultErrorMessage;
+        // Use res.data as the error message
+        if (typeof res.data === 'string') {
+            message = res.data;
+        }
+        if (res.data &&
+            typeof res.data === 'object' &&
+            'error' in res.data &&
+            res.data.error &&
+            !res.ok) {
+            if (typeof res.data.error === 'string') {
+                return {
+                    message: res.data.error,
+                    code: res.status,
+                    status: res.statusText,
+                };
+            }
+            if (typeof res.data.error === 'object') {
+                // extract status from data.message
+                message =
+                    'message' in res.data.error &&
+                        typeof res.data.error.message === 'string'
+                        ? res.data.error.message
+                        : message;
+                // extract status from data.error
+                const status = 'status' in res.data.error &&
+                    typeof res.data.error.status === 'string'
+                    ? res.data.error.status
+                    : res.statusText;
+                // extract code from data.error
+                const code = 'code' in res.data.error && typeof res.data.error.code === 'number'
+                    ? res.data.error.code
+                    : res.status;
+                if ('errors' in res.data.error &&
+                    Array.isArray(res.data.error.errors)) {
+                    const errorMessages = [];
+                    for (const e of res.data.error.errors) {
+                        if (typeof e === 'object' &&
+                            'message' in e &&
+                            typeof e.message === 'string') {
+                            errorMessages.push(e.message);
+                        }
+                    }
+                    return Object.assign({
+                        message: errorMessages.join('\n') || message,
+                        code,
+                        status,
+                    }, res.data.error);
+                }
+                return Object.assign({
+                    message,
+                    code,
+                    status,
+                }, res.data.error);
+            }
+        }
+        return {
+            message,
+            code: res.status,
+            status: res.statusText,
+        };
+    }
+}
+exports.GaxiosError = GaxiosError;
+function translateData(responseType, data) {
+    switch (responseType) {
+        case 'stream':
+            return data;
+        case 'json':
+            return JSON.parse(JSON.stringify(data));
+        case 'arraybuffer':
+            return JSON.parse(Buffer.from(data).toString('utf8'));
+        case 'blob':
+            return JSON.parse(data.text());
+        default:
+            return data;
+    }
+}
+/**
+ * An experimental error redactor.
+ *
+ * @param config Config to potentially redact properties of
+ * @param response Config to potentially redact properties of
+ *
+ * @experimental
+ */
+function defaultErrorRedactor(data) {
+    const REDACT = '<<REDACTED> - See `errorRedactor` option in `gaxios` for configuration>.';
+    function redactHeaders(headers) {
+        if (!headers)
+            return;
+        headers.forEach((_, key) => {
+            // any casing of `Authentication`
+            // any casing of `Authorization`
+            // anything containing secret, such as 'client secret'
+            if (/^authentication$/i.test(key) ||
+                /^authorization$/i.test(key) ||
+                /secret/i.test(key))
+                headers.set(key, REDACT);
+        });
+    }
+    function redactString(obj, key) {
+        if (typeof obj === 'object' &&
+            obj !== null &&
+            typeof obj[key] === 'string') {
+            const text = obj[key];
+            if (/grant_type=/i.test(text) ||
+                /assertion=/i.test(text) ||
+                /secret/i.test(text)) {
+                obj[key] = REDACT;
+            }
+        }
+    }
+    function redactObject(obj) {
+        if (!obj || typeof obj !== 'object') {
+            return;
+        }
+        else if (obj instanceof FormData ||
+            obj instanceof URLSearchParams ||
+            // support `node-fetch` FormData/URLSearchParams
+            ('forEach' in obj && 'set' in obj)) {
+            obj.forEach((_, key) => {
+                if (['grant_type', 'assertion'].includes(key) || /secret/.test(key)) {
+                    obj.set(key, REDACT);
+                }
+            });
+        }
+        else {
+            if ('grant_type' in obj) {
+                obj['grant_type'] = REDACT;
+            }
+            if ('assertion' in obj) {
+                obj['assertion'] = REDACT;
+            }
+            if ('client_secret' in obj) {
+                obj['client_secret'] = REDACT;
+            }
+        }
+    }
+    if (data.config) {
+        redactHeaders(data.config.headers);
+        redactString(data.config, 'data');
+        redactObject(data.config.data);
+        redactString(data.config, 'body');
+        redactObject(data.config.body);
+        if (data.config.url.searchParams.has('token')) {
+            data.config.url.searchParams.set('token', REDACT);
+        }
+        if (data.config.url.searchParams.has('client_secret')) {
+            data.config.url.searchParams.set('client_secret', REDACT);
+        }
+    }
+    if (data.response) {
+        defaultErrorRedactor({ config: data.response.config });
+        redactHeaders(data.response.headers);
+        // workaround for `node-fetch`'s `.data` deprecation...
+        if (data.response.bodyUsed) {
+            redactString(data.response, 'data');
+            redactObject(data.response.data);
+        }
+    }
+    return data;
+}
+//# sourceMappingURL=common.js.map
+
+/***/ }),
+
+/***/ 9679:
+/***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
+
+
+// Copyright 2018 Google LLC
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//    http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+var _a;
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.Gaxios = void 0;
+const extend_1 = __importDefault(__nccwpck_require__(3860));
+const https_1 = __nccwpck_require__(5692);
+const common_js_1 = __nccwpck_require__(8815);
+const retry_js_1 = __nccwpck_require__(1958);
+const stream_1 = __nccwpck_require__(2203);
+const interceptor_js_1 = __nccwpck_require__(895);
+const randomUUID = async () => globalThis.crypto?.randomUUID() || (await Promise.resolve(/* import() */).then(__nccwpck_require__.t.bind(__nccwpck_require__, 6982, 23))).randomUUID();
+const HTTP_STATUS_NO_CONTENT = 204;
+class Gaxios {
+    agentCache = new Map();
+    /**
+     * Default HTTP options that will be used for every HTTP request.
+     */
+    defaults;
+    /**
+     * Interceptors
+     */
+    interceptors;
+    /**
+     * The Gaxios class is responsible for making HTTP requests.
+     * @param defaults The default set of options to be used for this instance.
+     */
+    constructor(defaults) {
+        this.defaults = defaults || {};
+        this.interceptors = {
+            request: new interceptor_js_1.GaxiosInterceptorManager(),
+            response: new interceptor_js_1.GaxiosInterceptorManager(),
+        };
+    }
+    /**
+     * A {@link fetch `fetch`} compliant API for {@link Gaxios}.
+     *
+     * @remarks
+     *
+     * This is useful as a drop-in replacement for `fetch` API usage.
+     *
+     * @example
+     *
+     * ```ts
+     * const gaxios = new Gaxios();
+     * const myFetch: typeof fetch = (...args) => gaxios.fetch(...args);
+     * await myFetch('https://example.com');
+     * ```
+     *
+     * @param args `fetch` API or `Gaxios#request` parameters
+     * @returns the {@link Response} with Gaxios-added properties
+     */
+    fetch(...args) {
+        // Up to 2 parameters in either overload
+        const input = args[0];
+        const init = args[1];
+        let url = undefined;
+        const headers = new Headers();
+        // prepare URL
+        if (typeof input === 'string') {
+            url = new URL(input);
+        }
+        else if (input instanceof URL) {
+            url = input;
+        }
+        else if (input && input.url) {
+            url = new URL(input.url);
+        }
+        // prepare headers
+        if (input && typeof input === 'object' && 'headers' in input) {
+            _a.mergeHeaders(headers, input.headers);
+        }
+        if (init) {
+            _a.mergeHeaders(headers, new Headers(init.headers));
+        }
+        // prepare request
+        if (typeof input === 'object' && !(input instanceof URL)) {
+            // input must have been a non-URL object
+            return this.request({ ...init, ...input, headers, url });
+        }
+        else {
+            // input must have been a string or URL
+            return this.request({ ...init, headers, url });
+        }
+    }
+    /**
+     * Perform an HTTP request with the given options.
+     * @param opts Set of HTTP options that will be used for this HTTP request.
+     */
+    async request(opts = {}) {
+        let prepared = await this.#prepareRequest(opts);
+        prepared = await this.#applyRequestInterceptors(prepared);
+        return this.#applyResponseInterceptors(this._request(prepared));
+    }
+    async _defaultAdapter(config) {
+        const fetchImpl = config.fetchImplementation ||
+            this.defaults.fetchImplementation ||
+            (await _a.#getFetch());
+        // node-fetch v3 warns when `data` is present
+        // https://github.com/node-fetch/node-fetch/issues/1000
+        const preparedOpts = { ...config };
+        delete preparedOpts.data;
+        const res = (await fetchImpl(config.url, preparedOpts));
+        const data = await this.getResponseData(config, res);
+        if (!Object.getOwnPropertyDescriptor(res, 'data')?.configurable) {
+            // Work-around for `node-fetch` v3 as accessing `data` would otherwise throw
+            Object.defineProperties(res, {
+                data: {
+                    configurable: true,
+                    writable: true,
+                    enumerable: true,
+                    value: data,
+                },
+            });
+        }
+        // Keep object as an instance of `Response`
+        return Object.assign(res, { config, data });
+    }
+    /**
+     * Internal, retryable version of the `request` method.
+     * @param opts Set of HTTP options that will be used for this HTTP request.
+     */
+    async _request(opts) {
+        try {
+            let translatedResponse;
+            if (opts.adapter) {
+                translatedResponse = await opts.adapter(opts, this._defaultAdapter.bind(this));
+            }
+            else {
+                translatedResponse = await this._defaultAdapter(opts);
+            }
+            if (!opts.validateStatus(translatedResponse.status)) {
+                if (opts.responseType === 'stream') {
+                    const response = [];
+                    for await (const chunk of translatedResponse.data) {
+                        response.push(chunk);
+                    }
+                    translatedResponse.data = Buffer.concat(response.map(c => (typeof c === 'string' ? Buffer.from(c) : c))).toString('utf8');
+                }
+                const errorInfo = common_js_1.GaxiosError.extractAPIErrorFromResponse(translatedResponse, `Request failed with status code ${translatedResponse.status}`);
+                throw new common_js_1.GaxiosError(errorInfo?.message, opts, translatedResponse, errorInfo);
+            }
+            return translatedResponse;
+        }
+        catch (e) {
+            let err;
+            if (e instanceof common_js_1.GaxiosError) {
+                err = e;
+            }
+            else if (e instanceof Error) {
+                err = new common_js_1.GaxiosError(e.message, opts, undefined, e);
+            }
+            else {
+                err = new common_js_1.GaxiosError('Unexpected Gaxios Error', opts, undefined, e);
+            }
+            const { shouldRetry, config } = await (0, retry_js_1.getRetryConfig)(err);
+            if (shouldRetry && config) {
+                err.config.retryConfig.currentRetryAttempt =
+                    config.retryConfig.currentRetryAttempt;
+                // The error's config could be redacted - therefore we only want to
+                // copy the retry state over to the existing config
+                opts.retryConfig = err.config?.retryConfig;
+                // re-prepare timeout for the next request
+                this.#appendTimeoutToSignal(opts);
+                return this._request(opts);
+            }
+            if (opts.errorRedactor) {
+                opts.errorRedactor(err);
+            }
+            throw err;
+        }
+    }
+    async getResponseData(opts, res) {
+        if (res.status === HTTP_STATUS_NO_CONTENT) {
+            return '';
+        }
+        if (opts.maxContentLength &&
+            res.headers.has('content-length') &&
+            opts.maxContentLength <
+                Number.parseInt(res.headers?.get('content-length') || '')) {
+            throw new common_js_1.GaxiosError("Response's `Content-Length` is over the limit.", opts, Object.assign(res, { config: opts }));
+        }
+        switch (opts.responseType) {
+            case 'stream':
+                return res.body;
+            case 'json': {
+                const data = await res.text();
+                try {
+                    return JSON.parse(data);
+                }
+                catch {
+                    return data;
+                }
+            }
+            case 'arraybuffer':
+                return res.arrayBuffer();
+            case 'blob':
+                return res.blob();
+            case 'text':
+                return res.text();
+            default:
+                return this.getResponseDataFromContentType(res);
+        }
+    }
+    #urlMayUseProxy(url, noProxy = []) {
+        const candidate = new URL(url);
+        const noProxyList = [...noProxy];
+        const noProxyEnvList = (process.env.NO_PROXY ?? process.env.no_proxy)?.split(',') || [];
+        for (const rule of noProxyEnvList) {
+            noProxyList.push(rule.trim());
+        }
+        for (const rule of noProxyList) {
+            // Match regex
+            if (rule instanceof RegExp) {
+                if (rule.test(candidate.toString())) {
+                    return false;
+                }
+            }
+            // Match URL
+            else if (rule instanceof URL) {
+                if (rule.origin === candidate.origin) {
+                    return false;
+                }
+            }
+            // Match string regex
+            else if (rule.startsWith('*.') || rule.startsWith('.')) {
+                const cleanedRule = rule.replace(/^\*\./, '.');
+                if (candidate.hostname.endsWith(cleanedRule)) {
+                    return false;
+                }
+            }
+            // Basic string match
+            else if (rule === candidate.origin ||
+                rule === candidate.hostname ||
+                rule === candidate.href) {
+                return false;
+            }
+        }
+        return true;
+    }
+    /**
+     * Applies the request interceptors. The request interceptors are applied after the
+     * call to prepareRequest is completed.
+     *
+     * @param {GaxiosOptionsPrepared} options The current set of options.
+     *
+     * @returns {Promise<GaxiosOptionsPrepared>} Promise that resolves to the set of options or response after interceptors are applied.
+     */
+    async #applyRequestInterceptors(options) {
+        let promiseChain = Promise.resolve(options);
+        for (const interceptor of this.interceptors.request.values()) {
+            if (interceptor) {
+                promiseChain = promiseChain.then(interceptor.resolved, interceptor.rejected);
+            }
+        }
+        return promiseChain;
+    }
+    /**
+     * Applies the response interceptors. The response interceptors are applied after the
+     * call to request is made.
+     *
+     * @param {GaxiosOptionsPrepared} options The current set of options.
+     *
+     * @returns {Promise<GaxiosOptionsPrepared>} Promise that resolves to the set of options or response after interceptors are applied.
+     */
+    async #applyResponseInterceptors(response) {
+        let promiseChain = Promise.resolve(response);
+        for (const interceptor of this.interceptors.response.values()) {
+            if (interceptor) {
+                promiseChain = promiseChain.then(interceptor.resolved, interceptor.rejected);
+            }
+        }
+        return promiseChain;
+    }
+    /**
+     * Validates the options, merges them with defaults, and prepare request.
+     *
+     * @param options The original options passed from the client.
+     * @returns Prepared options, ready to make a request
+     */
+    async #prepareRequest(options) {
+        // Prepare Headers - copy in order to not mutate the original objects
+        const preparedHeaders = new Headers(this.defaults.headers);
+        _a.mergeHeaders(preparedHeaders, options.headers);
+        // Merge options
+        const opts = (0, extend_1.default)(true, {}, this.defaults, options);
+        if (!opts.url) {
+            throw new Error('URL is required.');
+        }
+        if (opts.baseURL) {
+            opts.url = new URL(opts.url, opts.baseURL);
+        }
+        // don't modify the properties of a default or provided URL
+        opts.url = new URL(opts.url);
+        if (opts.params) {
+            if (opts.paramsSerializer) {
+                let additionalQueryParams = opts.paramsSerializer(opts.params);
+                if (additionalQueryParams.startsWith('?')) {
+                    additionalQueryParams = additionalQueryParams.slice(1);
+                }
+                const prefix = opts.url.toString().includes('?') ? '&' : '?';
+                opts.url = opts.url + prefix + additionalQueryParams;
+            }
+            else {
+                const url = opts.url instanceof URL ? opts.url : new URL(opts.url);
+                for (const [key, value] of new URLSearchParams(opts.params)) {
+                    url.searchParams.append(key, value);
+                }
+                opts.url = url;
+            }
+        }
+        if (typeof options.maxContentLength === 'number') {
+            opts.size = options.maxContentLength;
+        }
+        if (typeof options.maxRedirects === 'number') {
+            opts.follow = options.maxRedirects;
+        }
+        const shouldDirectlyPassData = typeof opts.data === 'string' ||
+            opts.data instanceof ArrayBuffer ||
+            opts.data instanceof Blob ||
+            // Node 18 does not have a global `File` object
+            (globalThis.File && opts.data instanceof File) ||
+            opts.data instanceof FormData ||
+            opts.data instanceof stream_1.Readable ||
+            opts.data instanceof ReadableStream ||
+            opts.data instanceof String ||
+            opts.data instanceof URLSearchParams ||
+            ArrayBuffer.isView(opts.data) || // `Buffer` (Node.js), `DataView`, `TypedArray`
+            /**
+             * @deprecated `node-fetch` or another third-party's request types
+             */
+            ['Blob', 'File', 'FormData'].includes(opts.data?.constructor?.name || '');
+        if (opts.multipart?.length) {
+            const boundary = await randomUUID();
+            preparedHeaders.set('content-type', `multipart/related; boundary=${boundary}`);
+            opts.body = stream_1.Readable.from(this.getMultipartRequest(opts.multipart, boundary));
+        }
+        else if (shouldDirectlyPassData) {
+            opts.body = opts.data;
+        }
+        else if (typeof opts.data === 'object') {
+            if (preparedHeaders.get('Content-Type') ===
+                'application/x-www-form-urlencoded') {
+                // If www-form-urlencoded content type has been set, but data is
+                // provided as an object, serialize the content
+                opts.body = opts.paramsSerializer
+                    ? opts.paramsSerializer(opts.data)
+                    : new URLSearchParams(opts.data);
+            }
+            else {
+                if (!preparedHeaders.has('content-type')) {
+                    preparedHeaders.set('content-type', 'application/json');
+                }
+                opts.body = JSON.stringify(opts.data);
+            }
+        }
+        else if (opts.data) {
+            opts.body = opts.data;
+        }
+        opts.validateStatus = opts.validateStatus || this.validateStatus;
+        opts.responseType = opts.responseType || 'unknown';
+        if (!preparedHeaders.has('accept') && opts.responseType === 'json') {
+            preparedHeaders.set('accept', 'application/json');
+        }
+        const proxy = opts.proxy ||
+            process?.env?.HTTPS_PROXY ||
+            process?.env?.https_proxy ||
+            process?.env?.HTTP_PROXY ||
+            process?.env?.http_proxy;
+        if (opts.agent) {
+            // don't do any of the following options - use the user-provided agent.
+        }
+        else if (proxy && this.#urlMayUseProxy(opts.url, opts.noProxy)) {
+            const HttpsProxyAgent = await _a.#getProxyAgent();
+            if (this.agentCache.has(proxy)) {
+                opts.agent = this.agentCache.get(proxy);
+            }
+            else {
+                opts.agent = new HttpsProxyAgent(proxy, {
+                    cert: opts.cert,
+                    key: opts.key,
+                });
+                this.agentCache.set(proxy, opts.agent);
+            }
+        }
+        else if (opts.cert && opts.key) {
+            // Configure client for mTLS
+            if (this.agentCache.has(opts.key)) {
+                opts.agent = this.agentCache.get(opts.key);
+            }
+            else {
+                opts.agent = new https_1.Agent({
+                    cert: opts.cert,
+                    key: opts.key,
+                });
+                this.agentCache.set(opts.key, opts.agent);
+            }
+        }
+        if (typeof opts.errorRedactor !== 'function' &&
+            opts.errorRedactor !== false) {
+            opts.errorRedactor = common_js_1.defaultErrorRedactor;
+        }
+        if (opts.body && !('duplex' in opts)) {
+            /**
+             * required for Node.js and the type isn't available today
+             * @link https://github.com/nodejs/node/issues/46221
+             * @link https://github.com/microsoft/TypeScript-DOM-lib-generator/issues/1483
+             */
+            opts.duplex = 'half';
+        }
+        this.#appendTimeoutToSignal(opts);
+        return Object.assign(opts, {
+            headers: preparedHeaders,
+            url: opts.url instanceof URL ? opts.url : new URL(opts.url),
+        });
+    }
+    #appendTimeoutToSignal(opts) {
+        if (opts.timeout) {
+            const timeoutSignal = AbortSignal.timeout(opts.timeout);
+            if (opts.signal && !opts.signal.aborted) {
+                opts.signal = AbortSignal.any([opts.signal, timeoutSignal]);
+            }
+            else {
+                opts.signal = timeoutSignal;
+            }
+        }
+    }
+    /**
+     * By default, throw for any non-2xx status code
+     * @param status status code from the HTTP response
+     */
+    validateStatus(status) {
+        return status >= 200 && status < 300;
+    }
+    /**
+     * Attempts to parse a response by looking at the Content-Type header.
+     * @param {Response} response the HTTP response.
+     * @returns a promise that resolves to the response data.
+     */
+    async getResponseDataFromContentType(response) {
+        let contentType = response.headers.get('Content-Type');
+        if (contentType === null) {
+            // Maintain existing functionality by calling text()
+            return response.text();
+        }
+        contentType = contentType.toLowerCase();
+        if (contentType.includes('application/json')) {
+            let data = await response.text();
+            try {
+                data = JSON.parse(data);
+            }
+            catch {
+                // continue
+            }
+            return data;
+        }
+        else if (contentType.match(/^text\//)) {
+            return response.text();
+        }
+        else {
+            // If the content type is something not easily handled, just return the raw data (blob)
+            return response.blob();
+        }
+    }
+    /**
+     * Creates an async generator that yields the pieces of a multipart/related request body.
+     * This implementation follows the spec: https://www.ietf.org/rfc/rfc2387.txt. However, recursive
+     * multipart/related requests are not currently supported.
+     *
+     * @param {GaxiosMultipartOptions[]} multipartOptions the pieces to turn into a multipart/related body.
+     * @param {string} boundary the boundary string to be placed between each part.
+     */
+    async *getMultipartRequest(multipartOptions, boundary) {
+        const finale = `--${boundary}--`;
+        for (const currentPart of multipartOptions) {
+            const partContentType = currentPart.headers.get('Content-Type') || 'application/octet-stream';
+            const preamble = `--${boundary}\r\nContent-Type: ${partContentType}\r\n\r\n`;
+            yield preamble;
+            if (typeof currentPart.content === 'string') {
+                yield currentPart.content;
+            }
+            else {
+                yield* currentPart.content;
+            }
+            yield '\r\n';
+        }
+        yield finale;
+    }
+    /**
+     * A cache for the lazily-loaded proxy agent.
+     *
+     * Should use {@link Gaxios[#getProxyAgent]} to retrieve.
+     */
+    // using `import` to dynamically import the types here
+    static #proxyAgent;
+    /**
+     * A cache for the lazily-loaded fetch library.
+     *
+     * Should use {@link Gaxios[#getFetch]} to retrieve.
+     */
+    //
+    static #fetch;
+    /**
+     * Imports, caches, and returns a proxy agent - if not already imported
+     *
+     * @returns A proxy agent
+     */
+    static async #getProxyAgent() {
+        this.#proxyAgent ||= (await __nccwpck_require__.e(/* import() */ 669).then(__nccwpck_require__.t.bind(__nccwpck_require__, 3669, 23))).HttpsProxyAgent;
+        return this.#proxyAgent;
+    }
+    static async #getFetch() {
+        const hasWindow = typeof window !== 'undefined' && !!window;
+        this.#fetch ||= hasWindow
+            ? window.fetch
+            : (await __nccwpck_require__.e(/* import() */ 816).then(__nccwpck_require__.bind(__nccwpck_require__, 816))).default;
+        return this.#fetch;
+    }
+    /**
+     * Merges headers.
+     * If the base headers do not exist a new `Headers` object will be returned.
+     *
+     * @remarks
+     *
+     * Using this utility can be helpful when the headers are not known to exist:
+     * - if they exist as `Headers`, that instance will be used
+     *   - it improves performance and allows users to use their existing references to their `Headers`
+     * - if they exist in another form (`HeadersInit`), they will be used to create a new `Headers` object
+     * - if the base headers do not exist a new `Headers` object will be created
+     *
+     * @param base headers to append/overwrite to
+     * @param append headers to append/overwrite with
+     * @returns the base headers instance with merged `Headers`
+     */
+    static mergeHeaders(base, ...append) {
+        base = base instanceof Headers ? base : new Headers(base);
+        for (const headers of append) {
+            const add = headers instanceof Headers ? headers : new Headers(headers);
+            add.forEach((value, key) => {
+                // set-cookie is the only header that would repeat.
+                // A bit of background: https://developer.mozilla.org/en-US/docs/Web/API/Headers/getSetCookie
+                key === 'set-cookie' ? base.append(key, value) : base.set(key, value);
+            });
+        }
+        return base;
+    }
+}
+exports.Gaxios = Gaxios;
+_a = Gaxios;
+//# sourceMappingURL=gaxios.js.map
+
+/***/ }),
+
+/***/ 2324:
+/***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
+
+
+// Copyright 2018 Google LLC
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//    http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __exportStar = (this && this.__exportStar) || function(m, exports) {
+    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.instance = exports.Gaxios = exports.GaxiosError = void 0;
+exports.request = request;
+const gaxios_js_1 = __nccwpck_require__(9679);
+Object.defineProperty(exports, "Gaxios", ({ enumerable: true, get: function () { return gaxios_js_1.Gaxios; } }));
+var common_js_1 = __nccwpck_require__(8815);
+Object.defineProperty(exports, "GaxiosError", ({ enumerable: true, get: function () { return common_js_1.GaxiosError; } }));
+__exportStar(__nccwpck_require__(895), exports);
+/**
+ * The default instance used when the `request` method is directly
+ * invoked.
+ */
+exports.instance = new gaxios_js_1.Gaxios();
+/**
+ * Make an HTTP request using the given options.
+ * @param opts Options for the request
+ */
+async function request(opts) {
+    return exports.instance.request(opts);
+}
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ 895:
+/***/ ((__unused_webpack_module, exports) => {
+
+
+// Copyright 2024 Google LLC
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//    http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.GaxiosInterceptorManager = void 0;
+/**
+ * Class to manage collections of GaxiosInterceptors for both requests and responses.
+ */
+class GaxiosInterceptorManager extends Set {
+}
+exports.GaxiosInterceptorManager = GaxiosInterceptorManager;
+//# sourceMappingURL=interceptor.js.map
+
+/***/ }),
+
+/***/ 1958:
+/***/ ((__unused_webpack_module, exports) => {
+
+
+// Copyright 2018 Google LLC
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//    http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.getRetryConfig = getRetryConfig;
+async function getRetryConfig(err) {
+    let config = getConfig(err);
+    if (!err || !err.config || (!config && !err.config.retry)) {
+        return { shouldRetry: false };
+    }
+    config = config || {};
+    config.currentRetryAttempt = config.currentRetryAttempt || 0;
+    config.retry =
+        config.retry === undefined || config.retry === null ? 3 : config.retry;
+    config.httpMethodsToRetry = config.httpMethodsToRetry || [
+        'GET',
+        'HEAD',
+        'PUT',
+        'OPTIONS',
+        'DELETE',
+    ];
+    config.noResponseRetries =
+        config.noResponseRetries === undefined || config.noResponseRetries === null
+            ? 2
+            : config.noResponseRetries;
+    config.retryDelayMultiplier = config.retryDelayMultiplier
+        ? config.retryDelayMultiplier
+        : 2;
+    config.timeOfFirstRequest = config.timeOfFirstRequest
+        ? config.timeOfFirstRequest
+        : Date.now();
+    config.totalTimeout = config.totalTimeout
+        ? config.totalTimeout
+        : Number.MAX_SAFE_INTEGER;
+    config.maxRetryDelay = config.maxRetryDelay
+        ? config.maxRetryDelay
+        : Number.MAX_SAFE_INTEGER;
+    // If this wasn't in the list of status codes where we want
+    // to automatically retry, return.
+    const retryRanges = [
+        // https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
+        // 1xx - Retry (Informational, request still processing)
+        // 2xx - Do not retry (Success)
+        // 3xx - Do not retry (Redirect)
+        // 4xx - Do not retry (Client errors)
+        // 408 - Retry ("Request Timeout")
+        // 429 - Retry ("Too Many Requests")
+        // 5xx - Retry (Server errors)
+        [100, 199],
+        [408, 408],
+        [429, 429],
+        [500, 599],
+    ];
+    config.statusCodesToRetry = config.statusCodesToRetry || retryRanges;
+    // Put the config back into the err
+    err.config.retryConfig = config;
+    // Determine if we should retry the request
+    const shouldRetryFn = config.shouldRetry || shouldRetryRequest;
+    if (!(await shouldRetryFn(err))) {
+        return { shouldRetry: false, config: err.config };
+    }
+    const delay = getNextRetryDelay(config);
+    // We're going to retry!  Increment the counter.
+    err.config.retryConfig.currentRetryAttempt += 1;
+    // Create a promise that invokes the retry after the backOffDelay
+    const backoff = config.retryBackoff
+        ? config.retryBackoff(err, delay)
+        : new Promise(resolve => {
+            setTimeout(resolve, delay);
+        });
+    // Notify the user if they added an `onRetryAttempt` handler
+    if (config.onRetryAttempt) {
+        await config.onRetryAttempt(err);
+    }
+    // Return the promise in which recalls Gaxios to retry the request
+    await backoff;
+    return { shouldRetry: true, config: err.config };
+}
+/**
+ * Determine based on config if we should retry the request.
+ * @param err The GaxiosError passed to the interceptor.
+ */
+function shouldRetryRequest(err) {
+    const config = getConfig(err);
+    if ((err.config.signal?.aborted && err.code !== 'TimeoutError') ||
+        err.code === 'AbortError') {
+        return false;
+    }
+    // If there's no config, or retries are disabled, return.
+    if (!config || config.retry === 0) {
+        return false;
+    }
+    // Check if this error has no response (ETIMEDOUT, ENOTFOUND, etc)
+    if (!err.response &&
+        (config.currentRetryAttempt || 0) >= config.noResponseRetries) {
+        return false;
+    }
+    // Only retry with configured HttpMethods.
+    if (!config.httpMethodsToRetry ||
+        !config.httpMethodsToRetry.includes(err.config.method?.toUpperCase() || 'GET')) {
+        return false;
+    }
+    // If this wasn't in the list of status codes where we want
+    // to automatically retry, return.
+    if (err.response && err.response.status) {
+        let isInRange = false;
+        for (const [min, max] of config.statusCodesToRetry) {
+            const status = err.response.status;
+            if (status >= min && status <= max) {
+                isInRange = true;
+                break;
+            }
+        }
+        if (!isInRange) {
+            return false;
+        }
+    }
+    // If we are out of retry attempts, return
+    config.currentRetryAttempt = config.currentRetryAttempt || 0;
+    if (config.currentRetryAttempt >= config.retry) {
+        return false;
+    }
+    return true;
+}
+/**
+ * Acquire the raxConfig object from an GaxiosError if available.
+ * @param err The Gaxios error with a config object.
+ */
+function getConfig(err) {
+    if (err && err.config && err.config.retryConfig) {
+        return err.config.retryConfig;
+    }
+    return;
+}
+/**
+ * Gets the delay to wait before the next retry.
+ *
+ * @param {RetryConfig} config The current set of retry options
+ * @returns {number} the amount of ms to wait before the next retry attempt.
+ */
+function getNextRetryDelay(config) {
+    // Calculate time to wait with exponential backoff.
+    // If this is the first retry, look for a configured retryDelay.
+    const retryDelay = config.currentRetryAttempt
+        ? 0
+        : (config.retryDelay ?? 100);
+    // Formula: retryDelay + ((retryDelayMultiplier^currentRetryAttempt - 1 / 2) * 1000)
+    const calculatedDelay = retryDelay +
+        ((Math.pow(config.retryDelayMultiplier, config.currentRetryAttempt) - 1) /
+            2) *
+            1000;
+    const maxAllowableDelay = config.totalTimeout - (Date.now() - config.timeOfFirstRequest);
+    return Math.min(calculatedDelay, maxAllowableDelay, config.maxRetryDelay);
+}
+//# sourceMappingURL=retry.js.map
 
 /***/ }),
 
@@ -51189,7 +53640,7 @@ exports.requestTimeout = requestTimeout;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-const gaxios_1 = __nccwpck_require__(7842);
+const gaxios_1 = __nccwpck_require__(2324);
 const jsonBigint = __nccwpck_require__(4826);
 const gcp_residency_1 = __nccwpck_require__(4888);
 const logger = __importStar(__nccwpck_require__(1577));
@@ -51600,7 +54051,65 @@ exports.USER_AGENT = USER_AGENT;
 
 /***/ }),
 
+/***/ 7273:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+
+
+// Copyright 2023 Google LLC
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//    http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+const pkg = __nccwpck_require__(8535);
+module.exports = { pkg };
+//# sourceMappingURL=util.cjs.map
+
+/***/ }),
+
+/***/ 3761:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+
+
+// Copyright 2023 Google LLC
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//    http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+const pkg = __nccwpck_require__(407);
+module.exports = { pkg };
+//# sourceMappingURL=util.cjs.map
+
+/***/ }),
+
 /***/ 6495:
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"name":"gaxios","version":"7.3.1","description":"A simple common HTTP client specifically for Google APIs and services.","main":"build/cjs/src/index.js","types":"build/cjs/src/index.d.ts","files":["build/"],"exports":{".":{"import":{"types":"./build/esm/src/index.d.ts","default":"./build/esm/src/index.js"},"require":{"types":"./build/cjs/src/index.d.ts","default":"./build/cjs/src/index.js"}}},"scripts":{"lint":"gts check --no-inline-config","test":"c8 mocha build/esm/test","presystem-test":"npm run compile","system-test":"mocha build/esm/system-test --timeout 80000","compile":"tsc -b ./tsconfig.json ./tsconfig.cjs.json && node utils/enable-esm.mjs","fix":"gts fix","prepare":"npm run compile","pretest":"npm run compile","webpack":"webpack","prebrowser-test":"npm run compile","browser-test":"node build/browser-test/browser-test-runner.js","docs":"jsdoc -c .jsdoc.js","samples-test":"cd samples/ && npm link ../ && npm test && cd ../","prelint":"cd samples; npm link ../; npm install","clean":"gts clean"},"repository":{"type":"git","directory":"core/packages/gaxios","url":"https://github.com/googleapis/google-cloud-node.git"},"keywords":["google"],"engines":{"node":">=18"},"author":"Google, LLC","license":"Apache-2.0","devDependencies":{"@babel/plugin-proposal-private-methods":"^7.18.6","@types/cors":"^2.8.6","@types/express":"^5.0.0","@types/extend":"^3.0.1","@types/mocha":"^10.0.10","@types/multiparty":"4.2.1","@types/mv":"^2.1.0","@types/ncp":"^2.0.8","@types/node":"^24.0.0","@types/sinon":"^21.0.0","@types/tmp":"^0.2.6","assert":"^2.0.0","browserify":"^17.0.0","c8":"^10.1.3","cors":"^2.8.5","express":"^5.0.0","gts":"^6.0.2","is-docker":"^3.0.0","jsdoc":"^4.0.4","jsdoc-fresh":"^5.0.0","jsdoc-region-tag":"^4.0.0","karma":"^6.0.0","karma-chrome-launcher":"^3.0.0","karma-coverage":"^2.0.0","karma-firefox-launcher":"^2.0.0","karma-mocha":"^2.0.0","karma-remap-coverage":"^0.1.5","karma-sourcemap-loader":"^0.4.0","karma-webpack":"^5.0.0","mocha":"^11.1.0","multiparty":"^4.2.1","mv":"^2.1.1","ncp":"^2.0.0","nock":"14.0.5","null-loader":"^4.0.1","pack-n-play":"^4.0.0","puppeteer":"^24.0.0","sinon":"21.0.3","stream-browserify":"^3.0.0","tmp":"0.2.7","ts-loader":"^9.5.2","typescript":"5.8.3","undici-types":"^7.24.1","webpack":"^5.97.1","webpack-cli":"^6.0.1"},"dependencies":{"extend":"^3.0.2","https-proxy-agent":"^7.0.1","node-fetch":"^3.3.2"},"homepage":"https://github.com/googleapis/google-cloud-node/tree/main/core/packages/gaxios"}');
+
+/***/ }),
+
+/***/ 8535:
+/***/ ((module) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"name":"gaxios","version":"8.3.1","description":"A simple common HTTP client specifically for Google APIs and services.","main":"build/cjs/src/index.js","types":"build/cjs/src/index.d.ts","files":["build/cjs/src","build/esm/src","build/esm/package.json","!build/**/*.map"],"exports":{".":{"import":{"types":"./build/esm/src/index.d.ts","default":"./build/esm/src/index.js"},"require":{"types":"./build/cjs/src/index.d.ts","default":"./build/cjs/src/index.js"}},"./build/src/common":{"import":"./build/esm/src/common.js","require":"./build/cjs/src/common.js"},"./package.json":"./package.json"},"repository":{"type":"git","directory":"core/packages/gaxios","url":"https://github.com/googleapis/google-cloud-node.git"},"keywords":["google"],"engines":{"node":">=22"},"author":"Google, LLC","license":"Apache-2.0","devDependencies":{"@babel/plugin-proposal-private-methods":"^7.18.6","@types/cors":"^2.8.6","@types/express":"^5.0.0","@types/extend":"^3.0.1","@types/mocha":"^10.0.10","@types/multiparty":"4.2.1","@types/mv":"^2.1.0","@types/ncp":"^2.0.8","@types/node":"^24.0.0","@types/sinon":"^21.0.0","@types/tmp":"^0.2.6","assert":"^2.0.0","browserify":"^17.0.0","c8":"^10.1.3","cors":"^2.8.5","express":"^5.0.0","gts":"^6.0.2","is-docker":"^3.0.0","jsdoc":"^4.0.4","jsdoc-fresh":"^6.0.0","jsdoc-region-tag":"^5.0.0","karma":"^6.0.0","karma-chrome-launcher":"^3.0.0","karma-coverage":"^2.0.0","karma-firefox-launcher":"^2.0.0","karma-mocha":"^2.0.0","karma-remap-coverage":"^0.1.5","karma-sourcemap-loader":"^0.4.0","karma-webpack":"^5.0.0","mocha":"^11.1.0","multiparty":"^4.2.1","mv":"^2.1.1","ncp":"^2.0.0","nock":"14.0.5","null-loader":"^4.0.1","pack-n-play":"^4.0.0","puppeteer":"^24.0.0","sinon":"21.0.3","stream-browserify":"^3.0.0","tmp":"0.2.7","ts-loader":"^9.5.2","typescript":"5.8.3","undici-types":"^7.24.1","webpack":"^5.97.1","webpack-cli":"^6.0.1"},"dependencies":{"extend":"^3.0.2","https-proxy-agent":"^7.0.1","node-fetch":"^3.3.2"},"homepage":"https://github.com/googleapis/google-cloud-node/tree/main/core/packages/gaxios","scripts":{"lint":"gts check --no-inline-config","test":"node ../../../bin/run-test.cjs build/esm/test","presystem-test":"npm run compile","system-test":"mocha build/esm/system-test --timeout 80000","compile":"tsc -b ./tsconfig.json ./tsconfig.cjs.json && node utils/enable-esm.mjs","fix":"gts fix","pretest":"npm run compile","webpack":"webpack","prebrowser-test":"npm run compile","browser-test":"node build/browser-test/browser-test-runner.js","docs":"jsdoc -c .jsdoc.js","samples-test":"cd samples/ && npm link ../ && npm test && cd ../","prelint":"cd samples; npm link ../; npm install","clean":"gts clean"}}');
+
+/***/ }),
+
+/***/ 407:
 /***/ ((module) => {
 
 module.exports = /*#__PURE__*/JSON.parse('{"name":"gaxios","version":"7.3.1","description":"A simple common HTTP client specifically for Google APIs and services.","main":"build/cjs/src/index.js","types":"build/cjs/src/index.d.ts","files":["build/"],"exports":{".":{"import":{"types":"./build/esm/src/index.d.ts","default":"./build/esm/src/index.js"},"require":{"types":"./build/cjs/src/index.d.ts","default":"./build/cjs/src/index.js"}}},"scripts":{"lint":"gts check --no-inline-config","test":"c8 mocha build/esm/test","presystem-test":"npm run compile","system-test":"mocha build/esm/system-test --timeout 80000","compile":"tsc -b ./tsconfig.json ./tsconfig.cjs.json && node utils/enable-esm.mjs","fix":"gts fix","prepare":"npm run compile","pretest":"npm run compile","webpack":"webpack","prebrowser-test":"npm run compile","browser-test":"node build/browser-test/browser-test-runner.js","docs":"jsdoc -c .jsdoc.js","samples-test":"cd samples/ && npm link ../ && npm test && cd ../","prelint":"cd samples; npm link ../; npm install","clean":"gts clean"},"repository":{"type":"git","directory":"core/packages/gaxios","url":"https://github.com/googleapis/google-cloud-node.git"},"keywords":["google"],"engines":{"node":">=18"},"author":"Google, LLC","license":"Apache-2.0","devDependencies":{"@babel/plugin-proposal-private-methods":"^7.18.6","@types/cors":"^2.8.6","@types/express":"^5.0.0","@types/extend":"^3.0.1","@types/mocha":"^10.0.10","@types/multiparty":"4.2.1","@types/mv":"^2.1.0","@types/ncp":"^2.0.8","@types/node":"^24.0.0","@types/sinon":"^21.0.0","@types/tmp":"^0.2.6","assert":"^2.0.0","browserify":"^17.0.0","c8":"^10.1.3","cors":"^2.8.5","express":"^5.0.0","gts":"^6.0.2","is-docker":"^3.0.0","jsdoc":"^4.0.4","jsdoc-fresh":"^5.0.0","jsdoc-region-tag":"^4.0.0","karma":"^6.0.0","karma-chrome-launcher":"^3.0.0","karma-coverage":"^2.0.0","karma-firefox-launcher":"^2.0.0","karma-mocha":"^2.0.0","karma-remap-coverage":"^0.1.5","karma-sourcemap-loader":"^0.4.0","karma-webpack":"^5.0.0","mocha":"^11.1.0","multiparty":"^4.2.1","mv":"^2.1.1","ncp":"^2.0.0","nock":"14.0.5","null-loader":"^4.0.1","pack-n-play":"^4.0.0","puppeteer":"^24.0.0","sinon":"21.0.3","stream-browserify":"^3.0.0","tmp":"0.2.7","ts-loader":"^9.5.2","typescript":"5.8.3","undici-types":"^7.24.1","webpack":"^5.97.1","webpack-cli":"^6.0.1"},"dependencies":{"extend":"^3.0.2","https-proxy-agent":"^7.0.1","node-fetch":"^3.3.2"},"homepage":"https://github.com/googleapis/google-cloud-node/tree/main/core/packages/gaxios"}');
@@ -51610,7 +54119,7 @@ module.exports = /*#__PURE__*/JSON.parse('{"name":"gaxios","version":"7.3.1","de
 /***/ 6066:
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"name":"google-auth-library","version":"11.2.0","author":"Google Inc.","description":"Google APIs Authentication Client Library for Node.js","engines":{"node":">=22"},"main":"./build/src/index.js","types":"./build/src/index.d.ts","repository":{"type":"git","directory":"core/packages/google-auth-library-nodejs","url":"https://github.com/googleapis/google-cloud-node.git"},"keywords":["google","api","google apis","client","client library"],"dependencies":{"base64-js":"^1.3.0","ecdsa-sig-formatter":"^1.0.11","gaxios":"^7.1.4","gcp-metadata":"^9.0.0","google-logging-utils":"^2.0.0","jws":"^4.0.0"},"devDependencies":{"@types/base64-js":"^1.2.5","@types/jws":"^3.1.0","@types/mocha":"^10.0.10","@types/mv":"^2.1.0","@types/ncp":"^2.0.8","@types/node":"^24.0.0","@types/sinon":"^21.0.0","assert-rejects":"^1.0.0","c8":"^10.1.3","codecov":"^3.8.3","gts":"^6.0.2","is-docker":"^3.0.0","jsdoc":"^4.0.4","jsdoc-fresh":"^6.0.0","jsdoc-region-tag":"^5.0.0","karma":"^6.0.0","karma-chrome-launcher":"^3.0.0","karma-coverage":"^2.0.0","karma-firefox-launcher":"^2.0.0","karma-mocha":"^2.0.0","karma-sourcemap-loader":"^0.4.0","karma-webpack":"^5.0.0","keypair":"^1.0.4","mocha":"^11.1.0","mv":"^2.1.1","ncp":"^2.0.0","nock":"^14.0.5","null-loader":"^4.0.1","puppeteer":"^24.0.0","sinon":"21.0.3","ts-loader":"^9.5.2","typescript":"5.8.3","webpack":"^5.97.1","webpack-cli":"^6.0.1"},"files":["build/src","!build/src/**/*.map"],"scripts":{"test":"node ../../../bin/run-test.cjs --fetch-shim --gaxios-shim --assert-deep-equal-shim --crypto-verify-shim --keypair-shim build/test","clean":"gts clean","prepare":"npm run compile","lint":"gts check --no-inline-config","compile":"tsc -p .","fix":"gts fix","pretest":"pnpm run compile --sourceMap","docs":"jsdoc -c .jsdoc.js","samples-setup":"cd samples/ && pnpm link ../ && pnpm run setup && cd ../","samples-test":"cd samples/ && pnpm link ../ && pnpm test && cd ../","system-test":"mocha build/system-test --timeout 60000","presystem-test":"pnpm run compile --sourceMap","webpack":"webpack","browser-test":"karma start","prelint":"cd samples; pnpm link ../; pnpm install"},"license":"Apache-2.0","homepage":"https://github.com/googleapis/google-cloud-node/tree/main/core/packages/google-auth-library-nodejs"}');
+module.exports = /*#__PURE__*/JSON.parse('{"name":"google-auth-library","version":"11.3.1","author":"Google Inc.","description":"Google APIs Authentication Client Library for Node.js","engines":{"node":">=22"},"main":"./build/src/index.js","types":"./build/src/index.d.ts","repository":{"type":"git","directory":"core/packages/google-auth-library-nodejs","url":"https://github.com/googleapis/google-cloud-node.git"},"keywords":["google","api","google apis","client","client library"],"dependencies":{"base64-js":"^1.3.0","ecdsa-sig-formatter":"^1.0.11","gaxios":"^8.3.0","gcp-metadata":"^9.0.0","google-logging-utils":"^2.0.0","jws":"^4.0.0"},"devDependencies":{"@types/base64-js":"^1.2.5","@types/jws":"^3.1.0","@types/mocha":"^10.0.10","@types/mv":"^2.1.0","@types/ncp":"^2.0.8","@types/node":"^24.0.0","@types/sinon":"^21.0.0","assert-rejects":"^1.0.0","c8":"^10.1.3","codecov":"^3.8.3","gts":"^6.0.2","is-docker":"^3.0.0","jsdoc":"^4.0.4","jsdoc-fresh":"^6.0.0","jsdoc-region-tag":"^5.0.0","karma":"^6.0.0","karma-chrome-launcher":"^3.0.0","karma-coverage":"^2.0.0","karma-firefox-launcher":"^2.0.0","karma-mocha":"^2.0.0","karma-sourcemap-loader":"^0.4.0","karma-webpack":"^5.0.0","mocha":"^11.1.0","mv":"^2.1.1","ncp":"^2.0.0","nock":"^14.0.5","null-loader":"^4.0.1","puppeteer":"^24.0.0","sinon":"21.0.3","ts-loader":"^9.5.2","typescript":"5.8.3","webpack":"^5.97.1","webpack-cli":"^6.0.1"},"files":["build/src","!build/src/**/*.map"],"license":"Apache-2.0","homepage":"https://github.com/googleapis/google-cloud-node/tree/main/core/packages/google-auth-library-nodejs","scripts":{"test":"node ../../../bin/run-test.cjs build/test","clean":"gts clean","lint":"gts check --no-inline-config","compile":"tsc -p .","fix":"gts fix","pretest":"pnpm run compile --sourceMap","docs":"jsdoc -c .jsdoc.js","samples-setup":"cd samples/ && pnpm link ../ && pnpm run setup && cd ../","samples-test":"cd samples/ && pnpm link ../ && pnpm test && cd ../","system-test":"mocha build/system-test --timeout 60000","presystem-test":"pnpm run compile --sourceMap","webpack":"webpack","browser-test":"karma start","prelint":"cd samples; pnpm link ../; pnpm install"}}');
 
 /***/ }),
 
